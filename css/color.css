@@ -1,0 +1,2344 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  change color menu
+2. change color menu theme-1
+3. change color menu theme-2
+4. change color menu theme-3
+5. change color menu theme-4
+6. change color menu theme-5
+7. change color menu theme-6
+8. change color menu theme-7
+9. change color menu theme-8
+
+
+-------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.bge-1 {
+  background-color: #000; }
+
+.bg-white.color-4.header-style-2 nav > ul > li.active > a {
+  color: #fff; }
+
+.bg-1 {
+  background-color: #c7a75b; }
+
+.bg-2 {
+  background-color: #2b8aad; }
+
+.bg-3 {
+  background-color: #4ec07b; }
+
+.bg-4 {
+  background-color: #de442f; }
+
+.bg-5 {
+  background-color: #d7ce3d; }
+
+.bg-6 {
+  background-color: #c951a3; }
+
+.bg-7 {
+  background-color: #707af5; }
+
+.bg-8 {
+  background-color: #234f6e; }
+
+.bg-9 {
+  background-color: #4f1d76; }
+
+.bg-10 {
+  background-color: #30731b; }
+
+.wpc-style-page {
+  position: fixed;
+  width: 270px;
+  height: 100%;
+  right: -270px;
+  background: #fff;
+  z-index: 4000;
+  text-align: center;
+  box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 350ms cubic-bezier(0.53, -0.005, 0.75, 0.095);
+  transition: all 350ms cubic-bezier(0.53, -0.005, 0.75, 0.095); }
+
+.wrappers {
+  height: 100%;
+  padding: 15px 22px;
+  overflow-y: auto; }
+  .wrappers h4 {
+    background-color: #7f3030;
+    line-height: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px; }
+
+.site-logo {
+  margin-bottom: 40px;
+  display: block; }
+
+.wpc-style-page.slide-right {
+  right: 0px; }
+
+.conf-logo {
+  margin: 15px 0px; }
+
+.wpc-color-block {
+  width: 100%;
+  max-width: 225px;
+  text-align: center; }
+
+.wpc-style-page h5 {
+  color: #8f8f8f;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.wpc-style-page h5 {
+  position: relative;
+  letter-spacing: 2px;
+  margin: 35px 0 10px;
+  line-height: 35px; }
+  .wpc-style-page h5:after, .wpc-style-page h5:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: lightgrey; }
+  .wpc-style-page h5:after {
+    top: 0; }
+  .wpc-style-page h5:before {
+    bottom: 0; }
+
+.wpc-font-style {
+  margin-top: 20px;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wpc-font-style label {
+    padding-bottom: 0;
+    color: #686868;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .wpc-font-style h5 {
+    margin-bottom: 15px; }
+  .wpc-font-style input {
+    width: 100%;
+    min-height: 35px;
+    padding: 0 10px; }
+
+.wpc-font-style-item {
+  padding-top: 5px; }
+
+.entry {
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  position: relative;
+  float: left;
+  display: inline-block;
+  margin: 10px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
+
+.entry:before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  left: -5px;
+  top: -5px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
+
+.conf-button {
+  position: absolute;
+  width: 42px;
+  height: 75px;
+  left: -42px;
+  top: 215px;
+  background: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 2px 0px 0px 2px;
+  box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.1); }
+  .conf-button i {
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    background: transparent url("../img/changeMenu/spritesheet.png") 0 0 no-repeat;
+    display: block;
+    margin: 12px auto;
+    width: 22px;
+    height: 22px;
+    background-position: -5px -5px; }
+    .conf-button i:hover {
+      -webkit-transform: rotate(230deg);
+      transform: rotate(230deg); }
+  .conf-button a {
+    background: transparent url("../img/changeMenu/spritesheet.png") 0 0 no-repeat;
+    display: block;
+    margin: 12px auto;
+    width: 18px;
+    height: 24px;
+    margin-top: -5px;
+    background-position: -37px -5px; }
+
+.entry.active:before {
+  opacity: 1; }
+
+.entry:hover:before {
+  opacity: 1; }
+
+.wpc-style-page .input-entry.color-3 .checkbox-text {
+  position: relative;
+  float: left;
+  padding-top: 0px; }
+
+.item-block.style-3 {
+  border-radius: 5px; }
+
+.hotel-img .img-responsive {
+  border-radius: 5px; }
+
+.style-5.hover-blue-3.background-block {
+  border-radius: 5px; }
+
+.tour-block-s-5 .res-img {
+  border-radius: 5px; }
+
+.link-dr-blue:hover {
+  color: #fff; }
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+  text-align: center; }
+
+.offers-arrow.color-4 span {
+  color: #fff; }
+
+.offers-arrow.color-4:hover span {
+  color: #222; }
+
+.low-pad.input-style-1 input {
+  padding-left: 20px; }
+
+.drop-wrap-s-4 .drop span {
+  top: 50px; }
+
+body[data-color="theme-4"] .date-f {
+  color: #66BB6A; }
+
+body[data-color="theme-4"] .bg-dark.type-2 .contact-info i {
+  color: #66BB6A; }
+
+body[data-color="theme-4"] .footer-share a:hover {
+  color: #66BB6A; }
+
+body[data-color="theme-4"] .tags-b:before {
+  background: #66BB6A; }
+
+body[data-color="theme-4"] .link-red:hover {
+  color: #66BB6A; }
+
+body[data-color="theme-4"] .menu-3 nav > ul > li > .dropmenu {
+  border-top: 2px solid #66BB6A; }
+
+body[data-color="theme-4"] .menu-3 nav > ul > li.active {
+  border-top: 3px solid #66BB6A; }
+
+body[data-color="theme-4"] .menu-3 nav > ul > li.active > a {
+  color: #66BB6A; }
+
+body[data-color="theme-4"] .check-option.active span {
+  background: #ddbe5c;
+  border: 1px solid #ddbe5c; }
+
+body[data-color="theme-4"] .check-option:hover span {
+  background: #ddbe5c;
+  border: 1px solid #ddbe5c; }
+
+body[data-color="theme-4"] .accordeon-entry.active h5,
+body[data-color="theme-4"] .accordeon-entry h5:hover {
+  background: #ddbe5c; }
+
+body[data-color="theme-4"] .accordeon-entry h5:after {
+  background: #ddbe5c; }
+
+.header-style a {
+  margin-bottom: 7px;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid transparent; }
+
+.header-style a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #999;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
+
+.header-style a img {
+  width: 100%;
+  height: auto; }
+
+.header-style a:hover:before {
+  opacity: 1; }
+
+.header-style a.active:before {
+  opacity: 1; }
+
+.wpc-change-grid {
+  text-align: center; }
+  .wpc-change-grid h5 {
+    margin-top: 30px;
+    margin-bottom: 20px; }
+
+.check-option {
+  display: inline-block;
+  width: 45%;
+  margin-right: 2%; }
+
+.check-option span {
+  width: 100%;
+  display: inline-block;
+  padding: 0px 10px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: uppercase;
+  background-color: #e8e8e8;
+  border: 1px solid #E0DEDE;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  -o-transition: all 0.35s ease-in;
+  -webkit-transition: all 0.35s ease-in;
+  -ms-transition: all 0.35s ease-in; }
+
+.check-option span:hover {
+  background: #d0ae5e;
+  border: 1px solid #d0ae5e;
+  color: #fff; }
+
+.check-option:last-child {
+  margin-right: 0px; }
+
+.check-option.active span {
+  background: #d0ae5e;
+  border: 1px solid #d0ae5e;
+  color: #fff; }
+
+.dark-layer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); }
+
+.demo-layer .vertical-align {
+  display: none; }
+
+.main-wraper.color-2 .demo-title {
+  color: #fff; }
+
+.conf-button h6 {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  font-size: 12px;
+  margin-top: 20px;
+  line-height: 1;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.entry.active:before {
+  opacity: 1; }
+
+.wpc-home-link {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wpc-home-link h5 {
+    margin-bottom: 0px; }
+
+.wpc-home-link-item {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 0;
+  margin: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
+  .wpc-home-link-item:hover {
+    opacity: .8; }
+  .wpc-home-link-item span {
+    text-transform: uppercase;
+    color: #686868;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+.wpc-img-style {
+  max-width: 225px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wpc-img-style h5 {
+    margin-bottom: 10px; }
+  .wpc-img-style a {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    float: left;
+    background-size: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid rgba(224, 224, 244, 0.7);
+    position: relative; }
+    .wpc-img-style a:after {
+      content: '';
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid #e8e8e8;
+      border-radius: 2px;
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in; }
+    .wpc-img-style a:hover:after {
+      opacity: 1; }
+    .wpc-img-style a.active:after {
+      opacity: 1; }
+
+.wpc-bg-body {
+  background-size: cover !important;
+  background-attachment: fixed !important; }
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.theme-1 h2,
+.theme-1 .wpc-sushi-text2 h2,
+.theme-1 .wpc-testi-body h5,
+.theme-1 .wpc-hour span i,
+.theme-1 .wpc-our-menu .tabs-header li:hover a,
+.theme-1 .wpc-our-menu .tabs-header li.active a,
+.theme-1 .wpc-our-menu .tabs-header li:hover a,
+.theme-1 .wpc-our-menu-body span,
+.theme-1 .wpc-blog-h3-item-body .wpc-blog-h3-by h4,
+.theme-1 .wpc-blog-h3-item-body .wpc-blog-h3-info span:before,
+.theme-1 .wpc-blog-h3-item-body h3,
+.theme-1 .wpc-our-wrap .wpc-service-item span,
+.theme-1 .wpc-our-wrap .wpc-service-item .wpc-our-wrap-mail,
+.theme-1 .wpc-select-form-item .bootstrap-select.btn-group .dropdown-toggle .caret,
+.theme-1 .wpc-select-form-item1 .caret,
+.theme-1 .wpc-service-item span i,
+.theme-1 .wpc-hour span i,
+.theme-1 .wpc-testi-body h5,
+.theme-1 .wpc-blog-post .wpc-blog-post-info span:before,
+.theme-1 .wpc-b-posts-info span:before,
+.theme-1 .wpc-mains span,
+.theme-1 .wpc-blog-post-aside form button:before,
+.theme-1 .wpc-dishes .tabs-header li:hover a,
+.theme-1 .wpc-comments h4,
+.theme-1 .wpt-dish-ib-price span .wpc-add-com h4,
+.theme-1 .wpc-comments-text span:before,
+.theme-1 .wpc-dishes-price span,
+.theme-1 .wpc-dishes .tabs-header li.active a,
+.theme-1 .wpc-proposes-text span i,
+.theme-1 .wpc-footer h2,
+.theme-1 .wpc-work-time i,
+.theme-1 .wpt-dish-bg h2,
+.theme-1 .wpt-dish-tabs h4,
+.theme-1 .wpc-twitter a,
+.theme-1 .wpt-dish-ib-price span,
+.theme-1 .wpc-dishes .tabs-header li.active a,
+.theme-1 .wpc-copyright a,
+.theme-1 .wpc-header-menu .menu-item.logo a,
+.theme-1 .wpc-our-service h2,
+.theme-1 .wpc-about-bs h2,
+.theme-1 .wpc-swiper h1,
+.theme-1 .wpc-bs-prop h2,
+.theme-1 .wpc-bs-menu h2,
+.theme-1 .wpc-bs-info-block h2,
+.theme-1 .main-menu li a:hover,
+.theme-1 .main-menu li a.active,
+.theme-1 .wpc-sushi-prop-item .wpc-hide a:hover,
+.theme-1 .wpc-sushi-our-service .wpc-service-item span i,
+.theme-1 .wpc-about-form button,
+.theme-1 .wpc-header-menu-light.active .menu-item a:hover,
+.theme-1 .wpc-add-com h4,
+.theme-1 .wpc-header-menu-light.active .menu-item.logo a,
+.theme-1 .wpc-header-menu-light.active .menu-item a.active,
+.theme-1 .wpc-about-form h3,
+.theme-1 .wpc-header-menu .menu-item a:hover,
+.theme-1 .wpc-bs-elems-text i,
+.theme-1 .wpc-reservation h2,
+.theme-1 .wpc-bakery-info h2,
+.theme-1 .wpc-food-home h2,
+.theme-1 .wpc-services-food h2,
+.theme-1 .wpc-food-hide h5,
+.theme-1 .wpc-food-hide i,
+.theme-1 .wpc-fast-food-footer h2,
+.theme-1 .wpc-fast-food-footer h5,
+.theme-1 .wpc-fast-food-text h2,
+.theme-1 .wpc-header-menu-light.active .menu-item.logo a:hover,
+.theme-1 .wpc-bistro-footer h4,
+.theme-1 .wpc-header-menu-light.active .main-menu .sub-menu a:hover,
+.theme-1 .wpc-reservation .wpc-persons label.active span,
+.theme-1 .wpc-sushi-footer-item .soc-net li a:before,
+.theme-1 .wpc-header-sushi .main-menu li a:hover,
+.theme-1 .wpc-header-menu .menu-item a.active,
+.theme-1 .wpc-header-menu .menu-item a:hover,
+.theme-1 .wpc-bakery-food-item span i,
+.theme-1 .wpc-food-copyright a,
+.theme-1 .wpc-bakery-footer-item h5,
+.theme-1 .wpc-bakery-footer-item h6,
+.theme-1 .wpc-bakery-3block-slider .swiper-slide h4,
+.theme-1 .wpc-select-form .icon-left:before,
+.theme-1 .wpc-pizzeria-home h3,
+.theme-1 .wpc-footer h5,
+.theme-1 .wpc-bistro-info-block h2,
+.theme-1 .wpc-bistro-text h2,
+.theme-1 .wpc-sushi-dish h2,
+.theme-1 .wpc-pizzeria-prop h2,
+.theme-1 .wpc-pizzeria-prop i,
+.theme-1 .wpc-spizzeria-text h2,
+.theme-1 .wpc-pizzeria-recipes-text h2,
+.theme-1 .wpc-about-pizzeria h2,
+.theme-1 .wpc-info-block2_text h2,
+.theme-1 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-1 .wpc-bakery-copyright .logo a,
+.theme-1 .wpc-bistro-propose h2,
+.theme-1 .wpt-dish-itemH .wpc-dishes-price span,
+.theme-1 .logo2 a,
+.theme-1 .wpc-bistro-info-block2 h2,
+.theme-1 .wpc-bistro-discount h2 {
+  color: #c7a75b; }
+
+.theme-1 .wpc-pizzeria-home h1,
+.theme-1 .wpc-header-bakery .menu-item.logo a,
+.theme-1 .wpc-header-bakery.active .menu-item.logo a {
+  color: #fff; }
+
+.theme-1 .wpc-food-menu2-bg2,
+.theme-1 .wpc-comments h4,
+.theme-1 .wpc-add-com h4,
+.theme-1 .wpc-upcom,
+.theme-1 .wpc-bakery-food-item .wpc-bakery-logo:after,
+.theme-1 .wpc-after-elem,
+.theme-1 .wpc-dishes .tabs-header li.active a,
+.theme-1 .wpc-about-form button,
+.theme-1 .wpc-add-com input,
+.theme-1 .wpc-testi-h3,
+.theme-1 .wpc-add-com textarea,
+.theme-1 .wpc-reservation .wpc-persons label.active,
+.theme-1 .wpc-sushi-prop-item .wpc-hide a,
+.theme-1 .wpc-blog-post-aside form input,
+.theme-1 .wpc-dishes .tabs-header li:hover,
+.theme-1 .wpc-header-menu .menu-item.logo:after,
+.theme-1 .wpc-header-bakery .menu-item.logo,
+.theme-1 .wpc-after-elem:after,
+.theme-1 .wpc-dishes .tabs-header li.active {
+  border-color: #c7a75b; }
+
+.theme-1 .wpc-service-logo,
+.theme-1 .wpc-tabs-more,
+.theme-1 .wpc-header-menu .menu-item.logo a:before,
+.theme-1 .wpc-header-menu .menu-item.logo a:hover:before,
+.theme-1 .wpc-header-menu .menu-item.logo a:hover:after,
+.theme-1 .wpc-header-menu .menu-item.logo a:after,
+.theme-1 .wpc-hide-item,
+.theme-1 .wpc-bs-menu .slide-next,
+.theme-1 .wpc-about-title a,
+.theme-1 .wpc-bs-menu .tabs-header .wpc-bs-elems-text a,
+.theme-1 .wpc-comments-text a,
+.theme-1 .wpc-team .pagination .swiper-active-switch,
+.theme-1 .wpc-about-form button:hover,
+.theme-1 .wpc-upcoming-reg,
+.theme-1 .wpc-header-sushi .main-menu li a.active:before,
+.theme-1 .wpc-info-block4 a,
+.theme-1 .wpc-upcoming-date,
+.theme-1 .wpc-sushi-our-service .wpc-service-logo,
+.theme-1 .wpc-sushi-text a,
+.theme-1 .wpc-sushi-footer-item button:focus,
+.theme-1 .wpc-sushi-footer-item button,
+.theme-1 .wpc-add-com button,
+.theme-1 .wpc-contact-form button,
+.theme-1 .wpc-header-menu .menu-item a:hover:before,
+.theme-1 .wpc-header-menu .menu-item a:hover:after,
+.theme-1 .wpc-food-menu2-about a,
+.theme-1 .wpc-food-menu2-bg2 .wpc-food-menu2-chef a,
+.theme-1 .pagination .swiper-active-switch,
+.theme-1 .wpc-header-menu .menu-item a.active:before,
+.theme-1 .wpc-header-menu .menu-item a.active:after,
+.theme-1 .wpc-select-form-item .wpc-find-but,
+.theme-1 .wpc-testi .swiper-container .swiper-active-switch,
+.theme-1 .wpc-bakery-info a,
+.theme-1 .wpc-bakery-3block-slider .swiper-slide h4:after,
+.theme-1 .wpc-bakery-text a,
+.theme-1 .wpc-info-block6:after,
+.theme-1 .wpc-bakery-footer-item button,
+.theme-1 .wpc-bakery-food-item .wpc-bakery-logo,
+.theme-1 .wpc-footer-form button,
+.theme-1 .wpc-pizzeria-home a,
+.theme-1 .wpc-pizzeria-recipes-text a,
+.theme-1 .wpc-spizzeria-text a,
+.theme-1 .wpc-bistro-text a,
+.theme-1 .wpc-proposes-t-bg:hover:after,
+.theme-1 .wpc-header-bakery .menu-item.logo {
+  background-color: #c7a75b; }
+
+.theme-1 .wpc-select-form-item .bootstrap-select > .dropdown-toggle:focus,
+.theme-1 .wpc-select-form-item .bootstrap-select > .dropdown-toggle,
+.theme-1 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-1 .wpc-select-form-item1 input {
+  border-bottom: 1px solid #c7a75b; }
+
+.theme-1 .wpc-service-logo:after,
+.theme-1 .wpc-our-menu .tabs-header li:hover,
+.theme-1 .wpc-our-menu .tabs-header li.active,
+.theme-1 .wpc-blog-h3-item {
+  border: 2px solid #c7a75b; }
+
+.theme-1 .pagination .swiper-active-switch:after {
+  border: 1px solid #c7a75b; }
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.theme-2 h2,
+.theme-2 .logo2 a,
+.theme-2 .wpc-sushi-text2 h2,
+.theme-2 .wpc-testi-body h5,
+.theme-2 .wpc-hour span i,
+.theme-2 .wpc-our-menu .tabs-header li:hover a,
+.theme-2 .wpc-our-menu .tabs-header li.active a,
+.theme-2 .wpc-our-menu .tabs-header li:hover a,
+.theme-2 .wpc-our-menu-body span,
+.theme-2 .wpc-blog-h3-item-body .wpc-blog-h3-by h4,
+.theme-2 .wpc-blog-h3-item-body .wpc-blog-h3-info span:before,
+.theme-2 .wpc-blog-h3-item-body h3,
+.theme-2 .wpc-our-wrap .wpc-service-item span,
+.theme-2 .wpc-our-wrap .wpc-service-item .wpc-our-wrap-mail,
+.theme-2 .wpc-select-form-item .bootstrap-select.btn-group .dropdown-toggle .caret,
+.theme-2 .wpc-select-form-item1 .caret,
+.theme-2 .wpc-service-item span i,
+.theme-2 .wpc-hour span i,
+.theme-2 .wpc-testi-body h5,
+.theme-2 .wpc-blog-post .wpc-blog-post-info span:before,
+.theme-2 .wpc-b-posts-info span:before,
+.theme-2 .wpc-mains span,
+.theme-2 .wpc-blog-post-aside form button:before,
+.theme-2 .wpc-dishes .tabs-header li:hover a,
+.theme-2 .wpc-comments h4,
+.theme-2 .wpt-dish-ib-price span .wpc-add-com h4,
+.theme-2 .wpc-comments-text span:before,
+.theme-2 .wpc-dishes-price span,
+.theme-2 .wpc-dishes .tabs-header li.active a,
+.theme-2 .wpc-proposes-text span i,
+.theme-2 .wpc-footer h2,
+.theme-2 .wpc-work-time i,
+.theme-2 .wpt-dish-bg h2,
+.theme-2 .wpt-dish-tabs h4,
+.theme-2 .wpc-twitter a,
+.theme-2 .wpt-dish-ib-price span,
+.theme-2 .wpc-dishes .tabs-header li.active a,
+.theme-2 .wpc-copyright a,
+.theme-2 .wpc-header-menu .menu-item.logo a,
+.theme-2 .wpc-our-service h2,
+.theme-2 .wpc-about-bs h2,
+.theme-2 .wpc-swiper h1,
+.theme-2 .wpc-bs-prop h2,
+.theme-2 .wpc-bs-menu h2,
+.theme-2 .wpc-bs-info-block h2,
+.theme-2 .main-menu li a:hover,
+.theme-2 .main-menu li a.active,
+.theme-2 .wpc-sushi-prop-item .wpc-hide a:hover,
+.theme-2 .wpc-sushi-our-service .wpc-service-item span i,
+.theme-2 .wpc-about-form button,
+.theme-2 .wpc-header-menu-light.active .menu-item a:hover,
+.theme-2 .wpc-add-com h4,
+.theme-2 .wpc-header-menu-light.active .menu-item.logo a,
+.theme-2 .wpc-header-menu-light.active .menu-item a.active,
+.theme-2 .wpc-about-form h3,
+.theme-2 .wpc-header-menu .menu-item a:hover,
+.theme-2 .wpc-bs-elems-text i,
+.theme-2 .wpc-reservation h2,
+.theme-2 .wpc-bakery-info h2,
+.theme-2 .wpc-food-home h2,
+.theme-2 .wpc-services-food h2,
+.theme-2 .wpc-food-hide h5,
+.theme-2 .wpc-food-hide i,
+.theme-2 .wpc-fast-food-footer h2,
+.theme-2 .wpc-fast-food-footer h5,
+.theme-2 .wpc-fast-food-text h2,
+.theme-2 .wpc-header-menu-light.active .menu-item.logo a:hover,
+.theme-2 .wpc-bistro-footer h4,
+.theme-2 .wpc-header-menu-light.active .main-menu .sub-menu a:hover,
+.theme-2 .wpc-reservation .wpc-persons label.active span,
+.theme-2 .wpc-sushi-footer-item .soc-net li a:before,
+.theme-2 .wpc-header-sushi .main-menu li a:hover,
+.theme-2 .wpc-header-menu .menu-item a.active,
+.theme-2 .wpc-header-menu .menu-item a:hover,
+.theme-2 .wpc-bakery-food-item span i,
+.theme-2 .wpc-food-copyright a,
+.theme-2 .wpc-bakery-footer-item h5,
+.theme-2 .wpc-bakery-footer-item h6,
+.theme-2 .wpc-bakery-3block-slider .swiper-slide h4,
+.theme-2 .wpc-select-form .icon-left:before,
+.theme-2 .wpc-pizzeria-home h3,
+.theme-2 .wpc-footer h5,
+.theme-2 .wpc-bistro-info-block h2,
+.theme-2 .wpc-bistro-text h2,
+.theme-2 .wpt-dish-itemH .wpc-dishes-price span,
+.theme-2 .wpc-sushi-dish h2,
+.theme-2 .wpc-pizzeria-prop h2,
+.theme-2 .wpc-pizzeria-prop i,
+.theme-2 .wpc-spizzeria-text h2,
+.theme-2 .wpc-pizzeria-recipes-text h2,
+.theme-2 .wpc-about-pizzeria h2,
+.theme-2 .wpc-info-block2_text h2,
+.theme-2 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-2 .wpc-bakery-copyright .logo a,
+.theme-2 .wpc-bistro-propose h2,
+.theme-2 .wpc-bistro-info-block2 h2,
+.theme-2 .wpc-bistro-discount h2 {
+  color: #2b8aad; }
+
+.theme-2 .wpc-pizzeria-home h1,
+.theme-2 .wpc-header-bakery .menu-item.logo a,
+.theme-2 .wpc-header-bakery.active .menu-item.logo a {
+  color: #fff; }
+
+.theme-2 .wpc-food-menu2-bg2,
+.theme-2 .wpc-comments h4,
+.theme-2 .wpc-add-com h4,
+.theme-2 .wpc-upcom,
+.theme-2 .wpc-bakery-food-item .wpc-bakery-logo:after,
+.theme-2 .wpc-after-elem,
+.theme-2 .wpc-dishes .tabs-header li.active a,
+.theme-2 .wpc-about-form button,
+.theme-2 .wpc-add-com input,
+.theme-2 .wpc-testi-h3,
+.theme-2 .wpc-add-com textarea,
+.theme-2 .wpc-reservation .wpc-persons label.active,
+.theme-2 .wpc-sushi-prop-item .wpc-hide a,
+.theme-2 .wpc-blog-post-aside form input,
+.theme-2 .wpc-dishes .tabs-header li:hover,
+.theme-2 .wpc-header-menu .menu-item.logo:after,
+.theme-2 .wpc-header-bakery .menu-item.logo,
+.theme-2 .wpc-after-elem:after,
+.theme-2 .wpc-dishes .tabs-header li.active {
+  border-color: #2b8aad; }
+
+.theme-2 .wpc-service-logo,
+.theme-2 .wpc-tabs-more,
+.theme-2 .wpc-header-menu .menu-item.logo a:before,
+.theme-2 .wpc-header-menu .menu-item.logo a:hover:before,
+.theme-2 .wpc-header-menu .menu-item.logo a:hover:after,
+.theme-2 .wpc-header-menu .menu-item.logo a:after,
+.theme-2 .wpc-hide-item,
+.theme-2 .wpc-bs-menu .slide-next,
+.theme-2 .wpc-about-title a,
+.theme-2 .wpc-bs-menu .tabs-header .wpc-bs-elems-text a,
+.theme-2 .wpc-comments-text a,
+.theme-2 .wpc-team .pagination .swiper-active-switch,
+.theme-2 .wpc-about-form button:hover,
+.theme-2 .wpc-upcoming-reg,
+.theme-2 .wpc-header-sushi .main-menu li a.active:before,
+.theme-2 .wpc-info-block4 a,
+.theme-2 .wpc-upcoming-date,
+.theme-2 .wpc-sushi-our-service .wpc-service-logo,
+.theme-2 .wpc-sushi-text a,
+.theme-2 .wpc-sushi-footer-item button:focus,
+.theme-2 .wpc-sushi-footer-item button,
+.theme-2 .wpc-add-com button,
+.theme-2 .wpc-contact-form button,
+.theme-2 .wpc-header-menu .menu-item a:hover:before,
+.theme-2 .wpc-header-menu .menu-item a:hover:after,
+.theme-2 .wpc-food-menu2-about a,
+.theme-2 .wpc-food-menu2-bg2 .wpc-food-menu2-chef a,
+.theme-2 .pagination .swiper-active-switch,
+.theme-2 .wpc-header-menu .menu-item a.active:before,
+.theme-2 .wpc-header-menu .menu-item a.active:after,
+.theme-2 .wpc-select-form-item .wpc-find-but,
+.theme-2 .wpc-testi .swiper-container .swiper-active-switch,
+.theme-2 .wpc-bakery-info a,
+.theme-2 .wpc-bakery-3block-slider .swiper-slide h4:after,
+.theme-2 .wpc-bakery-text a,
+.theme-2 .wpc-info-block6:after,
+.theme-2 .wpc-bakery-footer-item button,
+.theme-2 .wpc-bakery-food-item .wpc-bakery-logo,
+.theme-2 .wpc-footer-form button,
+.theme-2 .wpc-pizzeria-home a,
+.theme-2 .wpc-pizzeria-recipes-text a,
+.theme-2 .wpc-spizzeria-text a,
+.theme-2 .wpc-bistro-text a,
+.theme-2 .wpc-proposes-t-bg:hover:after,
+.theme-2 .wpc-header-bakery .menu-item.logo {
+  background-color: #2b8aad; }
+
+.theme-2 .wpc-select-form-item .bootstrap-select > .dropdown-toggle:focus,
+.theme-2 .wpc-select-form-item .bootstrap-select > .dropdown-toggle,
+.theme-2 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-2 .wpc-select-form-item1 input {
+  border-bottom: 1px solid #2b8aad; }
+
+.theme-2 .wpc-service-logo:after,
+.theme-2 .wpc-our-menu .tabs-header li:hover,
+.theme-2 .wpc-our-menu .tabs-header li.active,
+.theme-2 .wpc-blog-h3-item {
+  border: 2px solid #2b8aad; }
+
+.theme-2 .pagination .swiper-active-switch:after {
+  border: 1px solid #2b8aad; }
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.theme-3 h2,
+.theme-3 .logo2 a,
+.theme-3 .wpc-sushi-text2 h2,
+.theme-3 .wpc-testi-body h5,
+.theme-3 .wpc-hour span i,
+.theme-3 .wpc-our-menu .tabs-header li:hover a,
+.theme-3 .wpc-our-menu .tabs-header li.active a,
+.theme-3 .wpc-our-menu .tabs-header li:hover a,
+.theme-3 .wpc-our-menu-body span,
+.theme-3 .wpc-blog-h3-item-body .wpc-blog-h3-by h4,
+.theme-3 .wpc-blog-h3-item-body .wpc-blog-h3-info span:before,
+.theme-3 .wpc-blog-h3-item-body h3,
+.theme-3 .wpc-our-wrap .wpc-service-item span,
+.theme-3 .wpc-our-wrap .wpc-service-item .wpc-our-wrap-mail,
+.theme-3 .wpc-select-form-item .bootstrap-select.btn-group .dropdown-toggle .caret,
+.theme-3 .wpc-select-form-item1 .caret,
+.theme-3 .wpc-service-item span i,
+.theme-3 .wpc-hour span i,
+.theme-3 .wpc-testi-body h5,
+.theme-3 .wpc-blog-post .wpc-blog-post-info span:before,
+.theme-3 .wpc-b-posts-info span:before,
+.theme-3 .wpc-mains span,
+.theme-3 .wpc-blog-post-aside form button:before,
+.theme-3 .wpc-dishes .tabs-header li:hover a,
+.theme-3 .wpc-comments h4,
+.theme-3 .wpt-dish-ib-price span .wpc-add-com h4,
+.theme-3 .wpc-comments-text span:before,
+.theme-3 .wpc-dishes-price span,
+.theme-3 .wpc-dishes .tabs-header li.active a,
+.theme-3 .wpc-proposes-text span i,
+.theme-3 .wpc-footer h2,
+.theme-3 .wpc-work-time i,
+.theme-3 .wpt-dish-itemH .wpc-dishes-price span,
+.theme-3 .wpt-dish-bg h2,
+.theme-3 .wpt-dish-tabs h4,
+.theme-3 .wpc-twitter a,
+.theme-3 .wpt-dish-ib-price span,
+.theme-3 .wpc-dishes .tabs-header li.active a,
+.theme-3 .wpc-copyright a,
+.theme-3 .wpc-header-menu .menu-item.logo a,
+.theme-3 .wpc-our-service h2,
+.theme-3 .wpc-about-bs h2,
+.theme-3 .wpc-swiper h1,
+.theme-3 .wpc-bs-prop h2,
+.theme-3 .wpc-bs-menu h2,
+.theme-3 .wpc-bs-info-block h2,
+.theme-3 .main-menu li a:hover,
+.theme-3 .main-menu li a.active,
+.theme-3 .wpc-sushi-prop-item .wpc-hide a:hover,
+.theme-3 .wpc-sushi-our-service .wpc-service-item span i,
+.theme-3 .wpc-about-form button,
+.theme-3 .wpc-header-menu-light.active .menu-item a:hover,
+.theme-3 .wpc-add-com h4,
+.theme-3 .wpc-header-menu-light.active .menu-item.logo a,
+.theme-3 .wpc-header-menu-light.active .menu-item a.active,
+.theme-3 .wpc-about-form h3,
+.theme-3 .wpc-header-menu .menu-item a:hover,
+.theme-3 .wpc-bs-elems-text i,
+.theme-3 .wpc-reservation h2,
+.theme-3 .wpc-bakery-info h2,
+.theme-3 .wpc-food-home h2,
+.theme-3 .wpc-services-food h2,
+.theme-3 .wpc-food-hide h5,
+.theme-3 .wpc-food-hide i,
+.theme-3 .wpc-fast-food-footer h2,
+.theme-3 .wpc-fast-food-footer h5,
+.theme-3 .wpc-fast-food-text h2,
+.theme-3 .wpc-header-menu-light.active .menu-item.logo a:hover,
+.theme-3 .wpc-bistro-footer h4,
+.theme-3 .wpc-header-menu-light.active .main-menu .sub-menu a:hover,
+.theme-3 .wpc-reservation .wpc-persons label.active span,
+.theme-3 .wpc-sushi-footer-item .soc-net li a:before,
+.theme-3 .wpc-header-sushi .main-menu li a:hover,
+.theme-3 .wpc-header-menu .menu-item a.active,
+.theme-3 .wpc-header-menu .menu-item a:hover,
+.theme-3 .wpc-bakery-food-item span i,
+.theme-3 .wpc-food-copyright a,
+.theme-3 .wpc-bakery-footer-item h5,
+.theme-3 .wpc-bakery-footer-item h6,
+.theme-3 .wpc-bakery-3block-slider .swiper-slide h4,
+.theme-3 .wpc-select-form .icon-left:before,
+.theme-3 .wpc-pizzeria-home h3,
+.theme-3 .wpc-footer h5,
+.theme-3 .wpc-bistro-info-block h2,
+.theme-3 .wpc-bistro-text h2,
+.theme-3 .wpc-sushi-dish h2,
+.theme-3 .wpc-pizzeria-prop h2,
+.theme-3 .wpc-pizzeria-prop i,
+.theme-3 .wpc-spizzeria-text h2,
+.theme-3 .wpc-pizzeria-recipes-text h2,
+.theme-3 .wpc-about-pizzeria h2,
+.theme-3 .wpc-info-block2_text h2,
+.theme-3 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-3 .wpc-bakery-copyright .logo a,
+.theme-3 .wpc-bistro-propose h2,
+.theme-3 .wpc-bistro-info-block2 h2,
+.theme-3 .wpc-bistro-discount h2 {
+  color: #4ec07b; }
+
+.theme-3 .wpc-pizzeria-home h1,
+.theme-3 .wpc-header-bakery .menu-item.logo a,
+.theme-3 .wpc-header-bakery.active .menu-item.logo a {
+  color: #fff; }
+
+.theme-3 .wpc-food-menu2-bg2,
+.theme-3 .wpc-comments h4,
+.theme-3 .wpc-add-com h4,
+.theme-3 .wpc-upcom,
+.theme-3 .wpc-bakery-food-item .wpc-bakery-logo:after,
+.theme-3 .wpc-after-elem,
+.theme-3 .wpc-dishes .tabs-header li.active a,
+.theme-3 .wpc-about-form button,
+.theme-3 .wpc-add-com input,
+.theme-3 .wpc-testi-h3,
+.theme-3 .wpc-add-com textarea,
+.theme-3 .wpc-reservation .wpc-persons label.active,
+.theme-3 .wpc-sushi-prop-item .wpc-hide a,
+.theme-3 .wpc-blog-post-aside form input,
+.theme-3 .wpc-dishes .tabs-header li:hover,
+.theme-3 .wpc-after-elem:after,
+.theme-3 .wpc-header-menu .menu-item.logo:after,
+.theme-3 .wpc-header-bakery .menu-item.logo,
+.theme-3 .wpc-dishes .tabs-header li.active {
+  border-color: #4ec07b; }
+
+.theme-3 .wpc-service-logo,
+.theme-3 .wpc-tabs-more,
+.theme-3 .wpc-header-menu .menu-item.logo a:before,
+.theme-3 .wpc-header-menu .menu-item.logo a:hover:before,
+.theme-3 .wpc-header-menu .menu-item.logo a:hover:after,
+.theme-3 .wpc-header-menu .menu-item.logo a:after,
+.theme-3 .wpc-hide-item,
+.theme-3 .wpc-bs-menu .slide-next,
+.theme-3 .wpc-about-title a,
+.theme-3 .wpc-bs-menu .tabs-header .wpc-bs-elems-text a,
+.theme-3 .wpc-comments-text a,
+.theme-3 .wpc-team .pagination .swiper-active-switch,
+.theme-3 .wpc-about-form button:hover,
+.theme-3 .wpc-upcoming-reg,
+.theme-3 .wpc-header-sushi .main-menu li a.active:before,
+.theme-3 .wpc-info-block4 a,
+.theme-3 .wpc-upcoming-date,
+.theme-3 .wpc-sushi-our-service .wpc-service-logo,
+.theme-3 .wpc-sushi-text a,
+.theme-3 .wpc-sushi-footer-item button:focus,
+.theme-3 .wpc-sushi-footer-item button,
+.theme-3 .wpc-add-com button,
+.theme-3 .wpc-contact-form button,
+.theme-3 .wpc-header-menu .menu-item a:hover:before,
+.theme-3 .wpc-header-menu .menu-item a:hover:after,
+.theme-3 .wpc-food-menu2-about a,
+.theme-3 .wpc-food-menu2-bg2 .wpc-food-menu2-chef a,
+.theme-3 .pagination .swiper-active-switch,
+.theme-3 .wpc-header-menu .menu-item a.active:before,
+.theme-3 .wpc-header-menu .menu-item a.active:after,
+.theme-3 .wpc-select-form-item .wpc-find-but,
+.theme-3 .wpc-testi .swiper-container .swiper-active-switch,
+.theme-3 .wpc-bakery-info a,
+.theme-3 .wpc-bakery-3block-slider .swiper-slide h4:after,
+.theme-3 .wpc-bakery-text a,
+.theme-3 .wpc-info-block6:after,
+.theme-3 .wpc-bakery-footer-item button,
+.theme-3 .wpc-bakery-food-item .wpc-bakery-logo,
+.theme-3 .wpc-footer-form button,
+.theme-3 .wpc-pizzeria-home a,
+.theme-3 .wpc-pizzeria-recipes-text a,
+.theme-3 .wpc-spizzeria-text a,
+.theme-3 .wpc-bistro-text a,
+.theme-3 .wpc-proposes-t-bg:hover:after,
+.theme-3 .wpc-header-bakery .menu-item.logo {
+  background-color: #4ec07b; }
+
+.theme-3 .wpc-select-form-item .bootstrap-select > .dropdown-toggle:focus,
+.theme-3 .wpc-select-form-item .bootstrap-select > .dropdown-toggle,
+.theme-3 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-3 .wpc-select-form-item1 input {
+  border-bottom: 1px solid #4ec07b; }
+
+.theme-3 .wpc-service-logo:after,
+.theme-3 .wpc-our-menu .tabs-header li:hover,
+.theme-3 .wpc-our-menu .tabs-header li.active,
+.theme-3 .wpc-blog-h3-item {
+  border: 2px solid #4ec07b; }
+
+.theme-3 .pagination .swiper-active-switch:after {
+  border: 1px solid #4ec07b; }
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.theme-4 h2,
+.theme-4 .wpt-dish-itemH .wpc-dishes-price span,
+.theme-4 .logo2 a,
+.theme-4 .wpc-sushi-text2 h2,
+.theme-4 .wpc-testi-body h5,
+.theme-4 .wpc-hour span i,
+.theme-4 .wpc-our-menu .tabs-header li:hover a,
+.theme-4 .wpc-our-menu .tabs-header li.active a,
+.theme-4 .wpc-our-menu .tabs-header li:hover a,
+.theme-4 .wpc-our-menu-body span,
+.theme-4 .wpc-blog-h3-item-body .wpc-blog-h3-by h4,
+.theme-4 .wpc-blog-h3-item-body .wpc-blog-h3-info span:before,
+.theme-4 .wpc-blog-h3-item-body h3,
+.theme-4 .wpc-our-wrap .wpc-service-item span,
+.theme-4 .wpc-our-wrap .wpc-service-item .wpc-our-wrap-mail,
+.theme-4 .wpc-select-form-item .bootstrap-select.btn-group .dropdown-toggle .caret,
+.theme-4 .wpc-select-form-item1 .caret,
+.theme-4 .wpc-service-item span i,
+.theme-4 .wpc-hour span i,
+.theme-4 .wpc-testi-body h5,
+.theme-4 .wpc-blog-post .wpc-blog-post-info span:before,
+.theme-4 .wpc-b-posts-info span:before,
+.theme-4 .wpc-mains span,
+.theme-4 .wpc-blog-post-aside form button:before,
+.theme-4 .wpc-dishes .tabs-header li:hover a,
+.theme-4 .wpc-comments h4,
+.theme-4 .wpt-dish-ib-price span .wpc-add-com h4,
+.theme-4 .wpc-comments-text span:before,
+.theme-4 .wpc-dishes-price span,
+.theme-4 .wpc-dishes .tabs-header li.active a,
+.theme-4 .wpc-proposes-text span i,
+.theme-4 .wpc-footer h2,
+.theme-4 .wpc-work-time i,
+.theme-4 .wpt-dish-bg h2,
+.theme-4 .wpt-dish-tabs h4,
+.theme-4 .wpc-twitter a,
+.theme-4 .wpt-dish-ib-price span,
+.theme-4 .wpc-dishes .tabs-header li.active a,
+.theme-4 .wpc-copyright a,
+.theme-4 .wpc-header-menu .menu-item.logo a,
+.theme-4 .wpc-our-service h2,
+.theme-4 .wpc-about-bs h2,
+.theme-4 .wpc-swiper h1,
+.theme-4 .wpc-bs-prop h2,
+.theme-4 .wpc-bs-menu h2,
+.theme-4 .wpc-bs-info-block h2,
+.theme-4 .main-menu li a:hover,
+.theme-4 .main-menu li a.active,
+.theme-4 .wpc-sushi-prop-item .wpc-hide a:hover,
+.theme-4 .wpc-sushi-our-service .wpc-service-item span i,
+.theme-4 .wpc-about-form button,
+.theme-4 .wpc-header-menu-light.active .menu-item a:hover,
+.theme-4 .wpc-add-com h4,
+.theme-4 .wpc-header-menu-light.active .menu-item.logo a,
+.theme-4 .wpc-header-menu-light.active .menu-item a.active,
+.theme-4 .wpc-about-form h3,
+.theme-4 .wpc-header-menu .menu-item a:hover,
+.theme-4 .wpc-bs-elems-text i,
+.theme-4 .wpc-reservation h2,
+.theme-4 .wpc-bakery-info h2,
+.theme-4 .wpc-food-home h2,
+.theme-4 .wpc-services-food h2,
+.theme-4 .wpc-food-hide h5,
+.theme-4 .wpc-food-hide i,
+.theme-4 .wpc-fast-food-footer h2,
+.theme-4 .wpc-fast-food-footer h5,
+.theme-4 .wpc-fast-food-text h2,
+.theme-4 .wpc-header-menu-light.active .menu-item.logo a:hover,
+.theme-4 .wpc-bistro-footer h4,
+.theme-4 .wpc-header-menu-light.active .main-menu .sub-menu a:hover,
+.theme-4 .wpc-reservation .wpc-persons label.active span,
+.theme-4 .wpc-sushi-footer-item .soc-net li a:before,
+.theme-4 .wpc-header-sushi .main-menu li a:hover,
+.theme-4 .wpc-header-menu .menu-item a.active,
+.theme-4 .wpc-header-menu .menu-item a:hover,
+.theme-4 .wpc-bakery-food-item span i,
+.theme-4 .wpc-food-copyright a,
+.theme-4 .wpc-bakery-footer-item h5,
+.theme-4 .wpc-bakery-footer-item h6,
+.theme-4 .wpc-bakery-3block-slider .swiper-slide h4,
+.theme-4 .wpc-select-form .icon-left:before,
+.theme-4 .wpc-pizzeria-home h3,
+.theme-4 .wpc-footer h5,
+.theme-4 .wpc-bistro-info-block h2,
+.theme-4 .wpc-bistro-text h2,
+.theme-4 .wpc-sushi-dish h2,
+.theme-4 .wpc-pizzeria-prop h2,
+.theme-4 .wpc-pizzeria-prop i,
+.theme-4 .wpc-spizzeria-text h2,
+.theme-4 .wpc-pizzeria-recipes-text h2,
+.theme-4 .wpc-about-pizzeria h2,
+.theme-4 .wpc-info-block2_text h2,
+.theme-4 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-4 .wpc-bakery-copyright .logo a,
+.theme-4 .wpc-bistro-propose h2,
+.theme-4 .wpc-bistro-info-block2 h2,
+.theme-4 .wpc-bistro-discount h2 {
+  color: #de442f; }
+
+.theme-4 .wpc-pizzeria-home h1,
+.theme-4 .wpc-header-bakery .menu-item.logo a,
+.theme-4 .wpc-header-bakery.active .menu-item.logo a {
+  color: #fff; }
+
+.theme-4 .wpc-food-menu2-bg2,
+.theme-4 .wpc-comments h4,
+.theme-4 .wpc-add-com h4,
+.theme-4 .wpc-upcom,
+.theme-4 .wpc-bakery-food-item .wpc-bakery-logo:after,
+.theme-4 .wpc-after-elem,
+.theme-4 .wpc-dishes .tabs-header li.active a,
+.theme-4 .wpc-about-form button,
+.theme-4 .wpc-add-com input,
+.theme-4 .wpc-testi-h3,
+.theme-4 .wpc-after-elem:after,
+.theme-4 .wpc-add-com textarea,
+.theme-4 .wpc-reservation .wpc-persons label.active,
+.theme-4 .wpc-sushi-prop-item .wpc-hide a,
+.theme-4 .wpc-blog-post-aside form input,
+.theme-4 .wpc-dishes .tabs-header li:hover,
+.theme-4 .wpc-header-menu .menu-item.logo:after,
+.theme-4 .wpc-header-bakery .menu-item.logo,
+.theme-4 .wpc-dishes .tabs-header li.active {
+  border-color: #de442f; }
+
+.theme-4 .wpc-service-logo,
+.theme-4 .wpc-tabs-more,
+.theme-4 .wpc-header-menu .menu-item.logo a:before,
+.theme-4 .wpc-header-menu .menu-item.logo a:hover:before,
+.theme-4 .wpc-header-menu .menu-item.logo a:hover:after,
+.theme-4 .wpc-header-menu .menu-item.logo a:after,
+.theme-4 .wpc-hide-item,
+.theme-4 .wpc-bs-menu .slide-next,
+.theme-4 .wpc-about-title a,
+.theme-4 .wpc-bs-menu .tabs-header .wpc-bs-elems-text a,
+.theme-4 .wpc-comments-text a,
+.theme-4 .wpc-team .pagination .swiper-active-switch,
+.theme-4 .wpc-about-form button:hover,
+.theme-4 .wpc-upcoming-reg,
+.theme-4 .wpc-header-sushi .main-menu li a.active:before,
+.theme-4 .wpc-info-block4 a,
+.theme-4 .wpc-upcoming-date,
+.theme-4 .wpc-sushi-our-service .wpc-service-logo,
+.theme-4 .wpc-sushi-text a,
+.theme-4 .wpc-sushi-footer-item button:focus,
+.theme-4 .wpc-sushi-footer-item button,
+.theme-4 .wpc-add-com button,
+.theme-4 .wpc-contact-form button,
+.theme-4 .wpc-header-menu .menu-item a:hover:before,
+.theme-4 .wpc-header-menu .menu-item a:hover:after,
+.theme-4 .wpc-food-menu2-about a,
+.theme-4 .wpc-food-menu2-bg2 .wpc-food-menu2-chef a,
+.theme-4 .pagination .swiper-active-switch,
+.theme-4 .wpc-header-menu .menu-item a.active:before,
+.theme-4 .wpc-header-menu .menu-item a.active:after,
+.theme-4 .wpc-select-form-item .wpc-find-but,
+.theme-4 .wpc-testi .swiper-container .swiper-active-switch,
+.theme-4 .wpc-bakery-info a,
+.theme-4 .wpc-bakery-3block-slider .swiper-slide h4:after,
+.theme-4 .wpc-bakery-text a,
+.theme-4 .wpc-info-block6:after,
+.theme-4 .wpc-bakery-footer-item button,
+.theme-4 .wpc-bakery-food-item .wpc-bakery-logo,
+.theme-4 .wpc-footer-form button,
+.theme-4 .wpc-pizzeria-home a,
+.theme-4 .wpc-pizzeria-recipes-text a,
+.theme-4 .wpc-spizzeria-text a,
+.theme-4 .wpc-bistro-text a,
+.theme-4 .wpc-proposes-t-bg:hover:after,
+.theme-4 .wpc-header-bakery .menu-item.logo {
+  background-color: #de442f; }
+
+.theme-4 .wpc-select-form-item .bootstrap-select > .dropdown-toggle:focus,
+.theme-4 .wpc-select-form-item .bootstrap-select > .dropdown-toggle,
+.theme-4 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-4 .wpc-select-form-item1 input {
+  border-bottom: 1px solid #de442f; }
+
+.theme-4 .wpc-service-logo:after,
+.theme-4 .wpc-our-menu .tabs-header li:hover,
+.theme-4 .wpc-our-menu .tabs-header li.active,
+.theme-4 .wpc-blog-h3-item {
+  border: 2px solid #de442f; }
+
+.theme-4 .pagination .swiper-active-switch:after {
+  border: 1px solid #de442f; }
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.theme-5 h2,
+.theme-5 .wpt-dish-itemH .wpc-dishes-price span,
+.theme-5 .logo2 a,
+.theme-5 .wpc-sushi-text2 h2,
+.theme-5 .wpc-testi-body h5,
+.theme-5 .wpc-hour span i,
+.theme-5 .wpc-our-menu .tabs-header li:hover a,
+.theme-5 .wpc-our-menu .tabs-header li.active a,
+.theme-5 .wpc-our-menu .tabs-header li:hover a,
+.theme-5 .wpc-our-menu-body span,
+.theme-5 .wpc-blog-h3-item-body .wpc-blog-h3-by h4,
+.theme-5 .wpc-blog-h3-item-body .wpc-blog-h3-info span:before,
+.theme-5 .wpc-blog-h3-item-body h3,
+.theme-5 .wpc-our-wrap .wpc-service-item span,
+.theme-5 .wpc-our-wrap .wpc-service-item .wpc-our-wrap-mail,
+.theme-5 .wpc-select-form-item .bootstrap-select.btn-group .dropdown-toggle .caret,
+.theme-5 .wpc-select-form-item1 .caret,
+.theme-5 .wpc-service-item span i,
+.theme-5 .wpc-hour span i,
+.theme-5 .wpc-testi-body h5,
+.theme-5 .wpc-blog-post .wpc-blog-post-info span:before,
+.theme-5 .wpc-b-posts-info span:before,
+.theme-5 .wpc-mains span,
+.theme-5 .wpc-blog-post-aside form button:before,
+.theme-5 .wpc-dishes .tabs-header li:hover a,
+.theme-5 .wpc-comments h4,
+.theme-5 .wpt-dish-ib-price span .wpc-add-com h4,
+.theme-5 .wpc-comments-text span:before,
+.theme-5 .wpc-dishes-price span,
+.theme-5 .wpc-dishes .tabs-header li.active a,
+.theme-5 .wpc-proposes-text span i,
+.theme-5 .wpc-footer h2,
+.theme-5 .wpc-work-time i,
+.theme-5 .wpt-dish-bg h2,
+.theme-5 .wpt-dish-tabs h4,
+.theme-5 .wpc-twitter a,
+.theme-5 .wpt-dish-ib-price span,
+.theme-5 .wpc-dishes .tabs-header li.active a,
+.theme-5 .wpc-copyright a,
+.theme-5 .wpc-header-menu .menu-item.logo a,
+.theme-5 .wpc-our-service h2,
+.theme-5 .wpc-about-bs h2,
+.theme-5 .wpc-swiper h1,
+.theme-5 .wpc-bs-prop h2,
+.theme-5 .wpc-bs-menu h2,
+.theme-5 .wpc-bs-info-block h2,
+.theme-5 .main-menu li a:hover,
+.theme-5 .main-menu li a.active,
+.theme-5 .wpc-sushi-prop-item .wpc-hide a:hover,
+.theme-5 .wpc-sushi-our-service .wpc-service-item span i,
+.theme-5 .wpc-about-form button,
+.theme-5 .wpc-header-menu-light.active .menu-item a:hover,
+.theme-5 .wpc-add-com h4,
+.theme-5 .wpc-header-menu-light.active .menu-item.logo a,
+.theme-5 .wpc-header-menu-light.active .menu-item a.active,
+.theme-5 .wpc-about-form h3,
+.theme-5 .wpc-header-menu .menu-item a:hover,
+.theme-5 .wpc-bs-elems-text i,
+.theme-5 .wpc-reservation h2,
+.theme-5 .wpc-bakery-info h2,
+.theme-5 .wpc-food-home h2,
+.theme-5 .wpc-services-food h2,
+.theme-5 .wpc-food-hide h5,
+.theme-5 .wpc-food-hide i,
+.theme-5 .wpc-fast-food-footer h2,
+.theme-5 .wpc-fast-food-footer h5,
+.theme-5 .wpc-fast-food-text h2,
+.theme-5 .wpc-header-menu-light.active .menu-item.logo a:hover,
+.theme-5 .wpc-bistro-footer h4,
+.theme-5 .wpc-header-menu-light.active .main-menu .sub-menu a:hover,
+.theme-5 .wpc-reservation .wpc-persons label.active span,
+.theme-5 .wpc-sushi-footer-item .soc-net li a:before,
+.theme-5 .wpc-header-sushi .main-menu li a:hover,
+.theme-5 .wpc-header-menu .menu-item a.active,
+.theme-5 .wpc-header-menu .menu-item a:hover,
+.theme-5 .wpc-bakery-food-item span i,
+.theme-5 .wpc-food-copyright a,
+.theme-5 .wpc-bakery-footer-item h5,
+.theme-5 .wpc-bakery-footer-item h6,
+.theme-5 .wpc-bakery-3block-slider .swiper-slide h4,
+.theme-5 .wpc-select-form .icon-left:before,
+.theme-5 .wpc-pizzeria-home h3,
+.theme-5 .wpc-footer h5,
+.theme-5 .wpc-bistro-info-block h2,
+.theme-5 .wpc-bistro-text h2,
+.theme-5 .wpc-sushi-dish h2,
+.theme-5 .wpc-pizzeria-prop h2,
+.theme-5 .wpc-pizzeria-prop i,
+.theme-5 .wpc-spizzeria-text h2,
+.theme-5 .wpc-pizzeria-recipes-text h2,
+.theme-5 .wpc-about-pizzeria h2,
+.theme-5 .wpc-info-block2_text h2,
+.theme-5 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-5 .wpc-bakery-copyright .logo a,
+.theme-5 .wpc-bistro-propose h2,
+.theme-5 .wpc-bistro-info-block2 h2,
+.theme-5 .wpc-bistro-discount h2 {
+  color: #d7ce3d; }
+
+.theme-5 .wpc-pizzeria-home h1,
+.theme-5 .wpc-header-bakery .menu-item.logo a,
+.theme-5 .wpc-header-bakery.active .menu-item.logo a {
+  color: #fff; }
+
+.theme-5 .wpc-food-menu2-bg2,
+.theme-5 .wpc-comments h4,
+.theme-5 .wpc-add-com h4,
+.theme-5 .wpc-upcom,
+.theme-5 .wpc-bakery-food-item .wpc-bakery-logo:after,
+.theme-5 .wpc-after-elem,
+.theme-5 .wpc-dishes .tabs-header li.active a,
+.theme-5 .wpc-about-form button,
+.theme-5 .wpc-add-com input,
+.theme-5 .wpc-testi-h3,
+.theme-5 .wpc-after-elem:after,
+.theme-5 .wpc-add-com textarea,
+.theme-5 .wpc-reservation .wpc-persons label.active,
+.theme-5 .wpc-sushi-prop-item .wpc-hide a,
+.theme-5 .wpc-blog-post-aside form input,
+.theme-5 .wpc-dishes .tabs-header li:hover,
+.theme-5 .wpc-header-menu .menu-item.logo:after,
+.theme-5 .wpc-header-bakery .menu-item.logo,
+.theme-5 .wpc-dishes .tabs-header li.active {
+  border-color: #d7ce3d; }
+
+.theme-5 .wpc-service-logo,
+.theme-5 .wpc-tabs-more,
+.theme-5 .wpc-header-menu .menu-item.logo a:before,
+.theme-5 .wpc-header-menu .menu-item.logo a:hover:before,
+.theme-5 .wpc-header-menu .menu-item.logo a:hover:after,
+.theme-5 .wpc-header-menu .menu-item.logo a:after,
+.theme-5 .wpc-hide-item,
+.theme-5 .wpc-bs-menu .slide-next,
+.theme-5 .wpc-about-title a,
+.theme-5 .wpc-bs-menu .tabs-header .wpc-bs-elems-text a,
+.theme-5 .wpc-comments-text a,
+.theme-5 .wpc-team .pagination .swiper-active-switch,
+.theme-5 .wpc-about-form button:hover,
+.theme-5 .wpc-upcoming-reg,
+.theme-5 .wpc-header-sushi .main-menu li a.active:before,
+.theme-5 .wpc-info-block4 a,
+.theme-5 .wpc-upcoming-date,
+.theme-5 .wpc-sushi-our-service .wpc-service-logo,
+.theme-5 .wpc-sushi-text a,
+.theme-5 .wpc-sushi-footer-item button:focus,
+.theme-5 .wpc-sushi-footer-item button,
+.theme-5 .wpc-add-com button,
+.theme-5 .wpc-contact-form button,
+.theme-5 .wpc-header-menu .menu-item a:hover:before,
+.theme-5 .wpc-header-menu .menu-item a:hover:after,
+.theme-5 .wpc-food-menu2-about a,
+.theme-5 .wpc-food-menu2-bg2 .wpc-food-menu2-chef a,
+.theme-5 .pagination .swiper-active-switch,
+.theme-5 .wpc-header-menu .menu-item a.active:before,
+.theme-5 .wpc-header-menu .menu-item a.active:after,
+.theme-5 .wpc-select-form-item .wpc-find-but,
+.theme-5 .wpc-testi .swiper-container .swiper-active-switch,
+.theme-5 .wpc-bakery-info a,
+.theme-5 .wpc-bakery-3block-slider .swiper-slide h4:after,
+.theme-5 .wpc-bakery-text a,
+.theme-5 .wpc-info-block6:after,
+.theme-5 .wpc-bakery-footer-item button,
+.theme-5 .wpc-bakery-food-item .wpc-bakery-logo,
+.theme-5 .wpc-footer-form button,
+.theme-5 .wpc-pizzeria-home a,
+.theme-5 .wpc-pizzeria-recipes-text a,
+.theme-5 .wpc-spizzeria-text a,
+.theme-5 .wpc-bistro-text a,
+.theme-5 .wpc-proposes-t-bg:hover:after,
+.theme-5 .wpc-header-bakery .menu-item.logo {
+  background-color: #d7ce3d; }
+
+.theme-5 .wpc-select-form-item .bootstrap-select > .dropdown-toggle:focus,
+.theme-5 .wpc-select-form-item .bootstrap-select > .dropdown-toggle,
+.theme-5 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-5 .wpc-select-form-item1 input {
+  border-bottom: 1px solid #d7ce3d; }
+
+.theme-5 .wpc-service-logo:after,
+.theme-5 .wpc-our-menu .tabs-header li:hover,
+.theme-5 .wpc-our-menu .tabs-header li.active,
+.theme-5 .wpc-blog-h3-item {
+  border: 2px solid #d7ce3d; }
+
+.theme-5 .pagination .swiper-active-switch:after {
+  border: 1px solid #d7ce3d; }
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.theme-6 h2,
+.theme-6 .wpt-dish-itemH .wpc-dishes-price span,
+.theme-6 .logo2 a,
+.theme-6 .wpc-sushi-text2 h2,
+.theme-6 .wpc-testi-body h5,
+.theme-6 .wpc-hour span i,
+.theme-6 .wpc-our-menu .tabs-header li:hover a,
+.theme-6 .wpc-our-menu .tabs-header li.active a,
+.theme-6 .wpc-our-menu .tabs-header li:hover a,
+.theme-6 .wpc-our-menu-body span,
+.theme-6 .wpc-blog-h3-item-body .wpc-blog-h3-by h4,
+.theme-6 .wpc-blog-h3-item-body .wpc-blog-h3-info span:before,
+.theme-6 .wpc-blog-h3-item-body h3,
+.theme-6 .wpc-our-wrap .wpc-service-item span,
+.theme-6 .wpc-our-wrap .wpc-service-item .wpc-our-wrap-mail,
+.theme-6 .wpc-select-form-item .bootstrap-select.btn-group .dropdown-toggle .caret,
+.theme-6 .wpc-select-form-item1 .caret,
+.theme-6 .wpc-service-item span i,
+.theme-6 .wpc-hour span i,
+.theme-6 .wpc-testi-body h5,
+.theme-6 .wpc-blog-post .wpc-blog-post-info span:before,
+.theme-6 .wpc-b-posts-info span:before,
+.theme-6 .wpc-mains span,
+.theme-6 .wpc-blog-post-aside form button:before,
+.theme-6 .wpc-dishes .tabs-header li:hover a,
+.theme-6 .wpc-comments h4,
+.theme-6 .wpt-dish-ib-price span .wpc-add-com h4,
+.theme-6 .wpc-comments-text span:before,
+.theme-6 .wpc-dishes-price span,
+.theme-6 .wpc-dishes .tabs-header li.active a,
+.theme-6 .wpc-proposes-text span i,
+.theme-6 .wpc-footer h2,
+.theme-6 .wpc-work-time i,
+.theme-6 .wpt-dish-bg h2,
+.theme-6 .wpt-dish-tabs h4,
+.theme-6 .wpc-twitter a,
+.theme-6 .wpt-dish-ib-price span,
+.theme-6 .wpc-dishes .tabs-header li.active a,
+.theme-6 .wpc-copyright a,
+.theme-6 .wpc-header-menu .menu-item.logo a,
+.theme-6 .wpc-our-service h2,
+.theme-6 .wpc-about-bs h2,
+.theme-6 .wpc-swiper h1,
+.theme-6 .wpc-bs-prop h2,
+.theme-6 .wpc-bs-menu h2,
+.theme-6 .wpc-bs-info-block h2,
+.theme-6 .main-menu li a:hover,
+.theme-6 .main-menu li a.active,
+.theme-6 .wpc-sushi-prop-item .wpc-hide a:hover,
+.theme-6 .wpc-sushi-our-service .wpc-service-item span i,
+.theme-6 .wpc-about-form button,
+.theme-6 .wpc-header-menu-light.active .menu-item a:hover,
+.theme-6 .wpc-add-com h4,
+.theme-6 .wpc-header-menu-light.active .menu-item.logo a,
+.theme-6 .wpc-header-menu-light.active .menu-item a.active,
+.theme-6 .wpc-about-form h3,
+.theme-6 .wpc-header-menu .menu-item a:hover,
+.theme-6 .wpc-bs-elems-text i,
+.theme-6 .wpc-reservation h2,
+.theme-6 .wpc-bakery-info h2,
+.theme-6 .wpc-food-home h2,
+.theme-6 .wpc-services-food h2,
+.theme-6 .wpc-food-hide h5,
+.theme-6 .wpc-food-hide i,
+.theme-6 .wpc-fast-food-footer h2,
+.theme-6 .wpc-fast-food-footer h5,
+.theme-6 .wpc-fast-food-text h2,
+.theme-6 .wpc-header-menu-light.active .menu-item.logo a:hover,
+.theme-6 .wpc-bistro-footer h4,
+.theme-6 .wpc-header-menu-light.active .main-menu .sub-menu a:hover,
+.theme-6 .wpc-reservation .wpc-persons label.active span,
+.theme-6 .wpc-sushi-footer-item .soc-net li a:before,
+.theme-6 .wpc-header-sushi .main-menu li a:hover,
+.theme-6 .wpc-header-menu .menu-item a.active,
+.theme-6 .wpc-header-menu .menu-item a:hover,
+.theme-6 .wpc-bakery-food-item span i,
+.theme-6 .wpc-food-copyright a,
+.theme-6 .wpc-bakery-footer-item h5,
+.theme-6 .wpc-bakery-footer-item h6,
+.theme-6 .wpc-bakery-3block-slider .swiper-slide h4,
+.theme-6 .wpc-select-form .icon-left:before,
+.theme-6 .wpc-pizzeria-home h3,
+.theme-6 .wpc-footer h5,
+.theme-6 .wpc-bistro-info-block h2,
+.theme-6 .wpc-bistro-text h2,
+.theme-6 .wpc-sushi-dish h2,
+.theme-6 .wpc-pizzeria-prop h2,
+.theme-6 .wpc-pizzeria-prop i,
+.theme-6 .wpc-spizzeria-text h2,
+.theme-6 .wpc-pizzeria-recipes-text h2,
+.theme-6 .wpc-about-pizzeria h2,
+.theme-6 .wpc-info-block2_text h2,
+.theme-6 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-6 .wpc-bakery-copyright .logo a,
+.theme-6 .wpc-bistro-propose h2,
+.theme-6 .wpc-bistro-info-block2 h2,
+.theme-6 .wpc-bistro-discount h2 {
+  color: #c951a3; }
+
+.theme-6 .wpc-pizzeria-home h1,
+.theme-6 .wpc-header-bakery .menu-item.logo a,
+.theme-6 .wpc-header-bakery.active .menu-item.logo a {
+  color: #fff; }
+
+.theme-6 .wpc-food-menu2-bg2,
+.theme-6 .wpc-comments h4,
+.theme-6 .wpc-add-com h4,
+.theme-6 .wpc-upcom,
+.theme-6 .wpc-bakery-food-item .wpc-bakery-logo:after,
+.theme-6 .wpc-after-elem,
+.theme-6 .wpc-dishes .tabs-header li.active a,
+.theme-6 .wpc-about-form button,
+.theme-6 .wpc-add-com input,
+.theme-6 .wpc-testi-h3,
+.theme-6 .wpc-after-elem:after,
+.theme-6 .wpc-add-com textarea,
+.theme-6 .wpc-reservation .wpc-persons label.active,
+.theme-6 .wpc-sushi-prop-item .wpc-hide a,
+.theme-6 .wpc-blog-post-aside form input,
+.theme-6 .wpc-dishes .tabs-header li:hover,
+.theme-6 .wpc-header-menu .menu-item.logo:after,
+.theme-6 .wpc-header-bakery .menu-item.logo,
+.theme-6 .wpc-dishes .tabs-header li.active {
+  border-color: #c951a3; }
+
+.theme-6 .wpc-service-logo,
+.theme-6 .wpc-tabs-more,
+.theme-6 .wpc-header-menu .menu-item.logo a:before,
+.theme-6 .wpc-header-menu .menu-item.logo a:hover:before,
+.theme-6 .wpc-header-menu .menu-item.logo a:hover:after,
+.theme-6 .wpc-header-menu .menu-item.logo a:after,
+.theme-6 .wpc-hide-item,
+.theme-6 .wpc-bs-menu .slide-next,
+.theme-6 .wpc-about-title a,
+.theme-6 .wpc-bs-menu .tabs-header .wpc-bs-elems-text a,
+.theme-6 .wpc-comments-text a,
+.theme-6 .wpc-team .pagination .swiper-active-switch,
+.theme-6 .wpc-about-form button:hover,
+.theme-6 .wpc-upcoming-reg,
+.theme-6 .wpc-header-sushi .main-menu li a.active:before,
+.theme-6 .wpc-info-block4 a,
+.theme-6 .wpc-upcoming-date,
+.theme-6 .wpc-sushi-our-service .wpc-service-logo,
+.theme-6 .wpc-sushi-text a,
+.theme-6 .wpc-sushi-footer-item button:focus,
+.theme-6 .wpc-sushi-footer-item button,
+.theme-6 .wpc-add-com button,
+.theme-6 .wpc-contact-form button,
+.theme-6 .wpc-header-menu .menu-item a:hover:before,
+.theme-6 .wpc-header-menu .menu-item a:hover:after,
+.theme-6 .wpc-food-menu2-about a,
+.theme-6 .wpc-food-menu2-bg2 .wpc-food-menu2-chef a,
+.theme-6 .pagination .swiper-active-switch,
+.theme-6 .wpc-header-menu .menu-item a.active:before,
+.theme-6 .wpc-header-menu .menu-item a.active:after,
+.theme-6 .wpc-select-form-item .wpc-find-but,
+.theme-6 .wpc-testi .swiper-container .swiper-active-switch,
+.theme-6 .wpc-bakery-info a,
+.theme-6 .wpc-bakery-3block-slider .swiper-slide h4:after,
+.theme-6 .wpc-bakery-text a,
+.theme-6 .wpc-info-block6:after,
+.theme-6 .wpc-bakery-footer-item button,
+.theme-6 .wpc-bakery-food-item .wpc-bakery-logo,
+.theme-6 .wpc-footer-form button,
+.theme-6 .wpc-pizzeria-home a,
+.theme-6 .wpc-pizzeria-recipes-text a,
+.theme-6 .wpc-spizzeria-text a,
+.theme-6 .wpc-bistro-text a,
+.theme-6 .wpc-proposes-t-bg:hover:after,
+.theme-6 .wpc-header-bakery .menu-item.logo {
+  background-color: #c951a3; }
+
+.theme-6 .wpc-select-form-item .bootstrap-select > .dropdown-toggle:focus,
+.theme-6 .wpc-select-form-item .bootstrap-select > .dropdown-toggle,
+.theme-6 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-6 .wpc-select-form-item1 input {
+  border-bottom: 1px solid #c951a3; }
+
+.theme-6 .wpc-service-logo:after,
+.theme-6 .wpc-our-menu .tabs-header li:hover,
+.theme-6 .wpc-our-menu .tabs-header li.active,
+.theme-6 .wpc-blog-h3-item {
+  border: 2px solid #c951a3; }
+
+.theme-6 .pagination .swiper-active-switch:after {
+  border: 1px solid #c951a3; }
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.theme-7 .wpt-dish-itemH .wpc-dishes-price span,
+.theme-7 h2,
+.theme-7 .logo2 a,
+.theme-7 .wpc-sushi-text2 h2,
+.theme-7 .wpc-testi-body h5,
+.theme-7 .wpc-hour span i,
+.theme-7 .wpc-our-menu .tabs-header li:hover a,
+.theme-7 .wpc-our-menu .tabs-header li.active a,
+.theme-7 .wpc-our-menu .tabs-header li:hover a,
+.theme-7 .wpc-our-menu-body span,
+.theme-7 .wpc-blog-h3-item-body .wpc-blog-h3-by h4,
+.theme-7 .wpc-blog-h3-item-body .wpc-blog-h3-info span:before,
+.theme-7 .wpc-blog-h3-item-body h3,
+.theme-7 .wpc-our-wrap .wpc-service-item span,
+.theme-7 .wpc-our-wrap .wpc-service-item .wpc-our-wrap-mail,
+.theme-7 .wpc-select-form-item .bootstrap-select.btn-group .dropdown-toggle .caret,
+.theme-7 .wpc-select-form-item1 .caret,
+.theme-7 .wpc-service-item span i,
+.theme-7 .wpc-hour span i,
+.theme-7 .wpc-testi-body h5,
+.theme-7 .wpc-blog-post .wpc-blog-post-info span:before,
+.theme-7 .wpc-b-posts-info span:before,
+.theme-7 .wpc-mains span,
+.theme-7 .wpc-blog-post-aside form button:before,
+.theme-7 .wpc-dishes .tabs-header li:hover a,
+.theme-7 .wpc-comments h4,
+.theme-7 .wpt-dish-ib-price span .wpc-add-com h4,
+.theme-7 .wpc-comments-text span:before,
+.theme-7 .wpc-dishes-price span,
+.theme-7 .wpc-dishes .tabs-header li.active a,
+.theme-7 .wpc-proposes-text span i,
+.theme-7 .wpc-footer h2,
+.theme-7 .wpc-work-time i,
+.theme-7 .wpt-dish-bg h2,
+.theme-7 .wpt-dish-tabs h4,
+.theme-7 .wpc-twitter a,
+.theme-7 .wpt-dish-ib-price span,
+.theme-7 .wpc-dishes .tabs-header li.active a,
+.theme-7 .wpc-copyright a,
+.theme-7 .wpc-header-menu .menu-item.logo a,
+.theme-7 .wpc-our-service h2,
+.theme-7 .wpc-about-bs h2,
+.theme-7 .wpc-swiper h1,
+.theme-7 .wpc-bs-prop h2,
+.theme-7 .wpc-bs-menu h2,
+.theme-7 .wpc-bs-info-block h2,
+.theme-7 .main-menu li a:hover,
+.theme-7 .main-menu li a.active,
+.theme-7 .wpc-sushi-prop-item .wpc-hide a:hover,
+.theme-7 .wpc-sushi-our-service .wpc-service-item span i,
+.theme-7 .wpc-about-form button,
+.theme-7 .wpc-header-menu-light.active .menu-item a:hover,
+.theme-7 .wpc-add-com h4,
+.theme-7 .wpc-header-menu-light.active .menu-item.logo a,
+.theme-7 .wpc-header-menu-light.active .menu-item a.active,
+.theme-7 .wpc-about-form h3,
+.theme-7 .wpc-header-menu .menu-item a:hover,
+.theme-7 .wpc-bs-elems-text i,
+.theme-7 .wpc-reservation h2,
+.theme-7 .wpc-bakery-info h2,
+.theme-7 .wpc-food-home h2,
+.theme-7 .wpc-services-food h2,
+.theme-7 .wpc-food-hide h5,
+.theme-7 .wpc-food-hide i,
+.theme-7 .wpc-fast-food-footer h2,
+.theme-7 .wpc-fast-food-footer h5,
+.theme-7 .wpc-fast-food-text h2,
+.theme-7 .wpc-header-menu-light.active .menu-item.logo a:hover,
+.theme-7 .wpc-bistro-footer h4,
+.theme-7 .wpc-header-menu-light.active .main-menu .sub-menu a:hover,
+.theme-7 .wpc-reservation .wpc-persons label.active span,
+.theme-7 .wpc-sushi-footer-item .soc-net li a:before,
+.theme-7 .wpc-header-sushi .main-menu li a:hover,
+.theme-7 .wpc-header-menu .menu-item a.active,
+.theme-7 .wpc-header-menu .menu-item a:hover,
+.theme-7 .wpc-bakery-food-item span i,
+.theme-7 .wpc-food-copyright a,
+.theme-7 .wpc-bakery-footer-item h5,
+.theme-7 .wpc-bakery-footer-item h6,
+.theme-7 .wpc-bakery-3block-slider .swiper-slide h4,
+.theme-7 .wpc-select-form .icon-left:before,
+.theme-7 .wpc-pizzeria-home h3,
+.theme-7 .wpc-footer h5,
+.theme-7 .wpc-bistro-info-block h2,
+.theme-7 .wpc-bistro-text h2,
+.theme-7 .wpc-sushi-dish h2,
+.theme-7 .wpc-pizzeria-prop h2,
+.theme-7 .wpc-pizzeria-prop i,
+.theme-7 .wpc-spizzeria-text h2,
+.theme-7 .wpc-pizzeria-recipes-text h2,
+.theme-7 .wpc-about-pizzeria h2,
+.theme-7 .wpc-info-block2_text h2,
+.theme-7 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-7 .wpc-bakery-copyright .logo a,
+.theme-7 .wpc-bistro-propose h2,
+.theme-7 .wpc-bistro-info-block2 h2,
+.theme-7 .wpc-bistro-discount h2 {
+  color: #707af5; }
+
+.theme-7 .wpc-pizzeria-home h1,
+.theme-7 .wpc-header-bakery .menu-item.logo a,
+.theme-7 .wpc-header-bakery.active .menu-item.logo a {
+  color: #fff; }
+
+.theme-7 .wpc-food-menu2-bg2,
+.theme-7 .wpc-comments h4,
+.theme-7 .wpc-add-com h4,
+.theme-7 .wpc-upcom,
+.theme-7 .wpc-bakery-food-item .wpc-bakery-logo:after,
+.theme-7 .wpc-after-elem,
+.theme-7 .wpc-dishes .tabs-header li.active a,
+.theme-7 .wpc-about-form button,
+.theme-7 .wpc-add-com input,
+.theme-7 .wpc-testi-h3,
+.theme-7 .wpc-after-elem:after,
+.theme-7 .wpc-add-com textarea,
+.theme-7 .wpc-reservation .wpc-persons label.active,
+.theme-7 .wpc-sushi-prop-item .wpc-hide a,
+.theme-7 .wpc-blog-post-aside form input,
+.theme-7 .wpc-dishes .tabs-header li:hover,
+.theme-7 .wpc-header-menu .menu-item.logo:after,
+.theme-7 .wpc-header-bakery .menu-item.logo,
+.theme-7 .wpc-dishes .tabs-header li.active {
+  border-color: #707af5; }
+
+.theme-7 .wpc-service-logo,
+.theme-7 .wpc-tabs-more,
+.theme-7 .wpc-header-menu .menu-item.logo a:before,
+.theme-7 .wpc-header-menu .menu-item.logo a:hover:before,
+.theme-7 .wpc-header-menu .menu-item.logo a:hover:after,
+.theme-7 .wpc-header-menu .menu-item.logo a:after,
+.theme-7 .wpc-hide-item,
+.theme-7 .wpc-bs-menu .slide-next,
+.theme-7 .wpc-about-title a,
+.theme-7 .wpc-bs-menu .tabs-header .wpc-bs-elems-text a,
+.theme-7 .wpc-comments-text a,
+.theme-7 .wpc-team .pagination .swiper-active-switch,
+.theme-7 .wpc-about-form button:hover,
+.theme-7 .wpc-upcoming-reg,
+.theme-7 .wpc-header-sushi .main-menu li a.active:before,
+.theme-7 .wpc-info-block4 a,
+.theme-7 .wpc-upcoming-date,
+.theme-7 .wpc-sushi-our-service .wpc-service-logo,
+.theme-7 .wpc-sushi-text a,
+.theme-7 .wpc-sushi-footer-item button:focus,
+.theme-7 .wpc-sushi-footer-item button,
+.theme-7 .wpc-add-com button,
+.theme-7 .wpc-contact-form button,
+.theme-7 .wpc-header-menu .menu-item a:hover:before,
+.theme-7 .wpc-header-menu .menu-item a:hover:after,
+.theme-7 .wpc-food-menu2-about a,
+.theme-7 .wpc-food-menu2-bg2 .wpc-food-menu2-chef a,
+.theme-7 .pagination .swiper-active-switch,
+.theme-7 .wpc-header-menu .menu-item a.active:before,
+.theme-7 .wpc-header-menu .menu-item a.active:after,
+.theme-7 .wpc-select-form-item .wpc-find-but,
+.theme-7 .wpc-testi .swiper-container .swiper-active-switch,
+.theme-7 .wpc-bakery-info a,
+.theme-7 .wpc-bakery-3block-slider .swiper-slide h4:after,
+.theme-7 .wpc-bakery-text a,
+.theme-7 .wpc-info-block6:after,
+.theme-7 .wpc-bakery-footer-item button,
+.theme-7 .wpc-bakery-food-item .wpc-bakery-logo,
+.theme-7 .wpc-footer-form button,
+.theme-7 .wpc-pizzeria-home a,
+.theme-7 .wpc-pizzeria-recipes-text a,
+.theme-7 .wpc-spizzeria-text a,
+.theme-7 .wpc-bistro-text a,
+.theme-7 .wpc-proposes-t-bg:hover:after,
+.theme-7 .wpc-header-bakery .menu-item.logo {
+  background-color: #707af5; }
+
+.theme-7 .wpc-select-form-item .bootstrap-select > .dropdown-toggle:focus,
+.theme-7 .wpc-select-form-item .bootstrap-select > .dropdown-toggle,
+.theme-7 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-7 .wpc-select-form-item1 input {
+  border-bottom: 1px solid #707af5; }
+
+.theme-7 .wpc-service-logo:after,
+.theme-7 .wpc-our-menu .tabs-header li:hover,
+.theme-7 .wpc-our-menu .tabs-header li.active,
+.theme-7 .wpc-blog-h3-item {
+  border: 2px solid #707af5; }
+
+.theme-7 .pagination .swiper-active-switch:after {
+  border: 1px solid #707af5; }
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.theme-8 h2,
+.theme-8 .logo2 a,
+.theme-8 .wpc-sushi-text2 h2,
+.theme-8 .wpc-testi-body h5,
+.theme-8 .wpc-hour span i,
+.theme-8 .wpc-our-menu .tabs-header li:hover a,
+.theme-8 .wpc-our-menu .tabs-header li.active a,
+.theme-8 .wpc-our-menu .tabs-header li:hover a,
+.theme-8 .wpc-our-menu-body span,
+.theme-8 .wpc-blog-h3-item-body .wpc-blog-h3-by h4,
+.theme-8 .wpc-blog-h3-item-body .wpc-blog-h3-info span:before,
+.theme-8 .wpc-blog-h3-item-body h3,
+.theme-8 .wpc-our-wrap .wpc-service-item span,
+.theme-8 .wpc-our-wrap .wpc-service-item .wpc-our-wrap-mail,
+.theme-8 .wpc-select-form-item .bootstrap-select.btn-group .dropdown-toggle .caret,
+.theme-8 .wpc-select-form-item1 .caret,
+.theme-8 .wpc-service-item span i,
+.theme-8 .wpc-hour span i,
+.theme-8 .wpc-testi-body h5,
+.theme-8 .wpc-blog-post .wpc-blog-post-info span:before,
+.theme-8 .wpc-b-posts-info span:before,
+.theme-8 .wpc-mains span,
+.theme-8 .wpc-blog-post-aside form button:before,
+.theme-8 .wpc-dishes .tabs-header li:hover a,
+.theme-8 .wpc-comments h4,
+.theme-8 .wpt-dish-ib-price span .wpc-add-com h4,
+.theme-8 .wpc-comments-text span:before,
+.theme-8 .wpc-dishes-price span,
+.theme-8 .wpc-dishes .tabs-header li.active a,
+.theme-8 .wpc-proposes-text span i,
+.theme-8 .wpc-footer h2,
+.theme-8 .wpc-work-time i,
+.theme-8 .wpt-dish-itemH .wpc-dishes-price span,
+.theme-8 .wpt-dish-bg h2,
+.theme-8 .wpt-dish-tabs h4,
+.theme-8 .wpc-twitter a,
+.theme-8 .wpt-dish-ib-price span,
+.theme-8 .wpc-dishes .tabs-header li.active a,
+.theme-8 .wpc-copyright a,
+.theme-8 .wpc-header-menu .menu-item.logo a,
+.theme-8 .wpc-our-service h2,
+.theme-8 .wpc-about-bs h2,
+.theme-8 .wpc-swiper h1,
+.theme-8 .wpc-bs-prop h2,
+.theme-8 .wpc-bs-menu h2,
+.theme-8 .wpc-bs-info-block h2,
+.theme-8 .main-menu li a:hover,
+.theme-8 .main-menu li a.active,
+.theme-8 .wpc-sushi-prop-item .wpc-hide a:hover,
+.theme-8 .wpc-sushi-our-service .wpc-service-item span i,
+.theme-8 .wpc-about-form button,
+.theme-8 .wpc-header-menu-light.active .menu-item a:hover,
+.theme-8 .wpc-add-com h4,
+.theme-8 .wpc-header-menu-light.active .menu-item.logo a,
+.theme-8 .wpc-header-menu-light.active .menu-item a.active,
+.theme-8 .wpc-about-form h3,
+.theme-8 .wpc-header-menu .menu-item a:hover,
+.theme-8 .wpc-bs-elems-text i,
+.theme-8 .wpc-reservation h2,
+.theme-8 .wpc-bakery-info h2,
+.theme-8 .wpc-food-home h2,
+.theme-8 .wpc-services-food h2,
+.theme-8 .wpc-food-hide h5,
+.theme-8 .wpc-food-hide i,
+.theme-8 .wpc-fast-food-footer h2,
+.theme-8 .wpc-fast-food-footer h5,
+.theme-8 .wpc-fast-food-text h2,
+.theme-8 .wpc-header-menu-light.active .menu-item.logo a:hover,
+.theme-8 .wpc-bistro-footer h4,
+.theme-8 .wpc-header-menu-light.active .main-menu .sub-menu a:hover,
+.theme-8 .wpc-reservation .wpc-persons label.active span,
+.theme-8 .wpc-sushi-footer-item .soc-net li a:before,
+.theme-8 .wpc-header-sushi .main-menu li a:hover,
+.theme-8 .wpc-header-menu .menu-item a.active,
+.theme-8 .wpc-header-menu .menu-item a:hover,
+.theme-8 .wpc-bakery-food-item span i,
+.theme-8 .wpc-food-copyright a,
+.theme-8 .wpc-bakery-footer-item h5,
+.theme-8 .wpc-bakery-footer-item h6,
+.theme-8 .wpc-bakery-3block-slider .swiper-slide h4,
+.theme-8 .wpc-select-form .icon-left:before,
+.theme-8 .wpc-pizzeria-home h3,
+.theme-8 .wpc-footer h5,
+.theme-8 .wpc-bistro-info-block h2,
+.theme-8 .wpc-bistro-text h2,
+.theme-8 .wpc-sushi-dish h2,
+.theme-8 .wpc-pizzeria-prop h2,
+.theme-8 .wpc-pizzeria-prop i,
+.theme-8 .wpc-spizzeria-text h2,
+.theme-8 .wpc-pizzeria-recipes-text h2,
+.theme-8 .wpc-about-pizzeria h2,
+.theme-8 .wpc-info-block2_text h2,
+.theme-8 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-8 .wpc-bakery-copyright .logo a,
+.theme-8 .wpc-bistro-propose h2,
+.theme-8 .wpc-bistro-info-block2 h2,
+.theme-8 .wpc-bistro-discount h2 {
+  color: #234f6e; }
+
+.theme-8 .wpc-pizzeria-home h1,
+.theme-8 .wpc-header-bakery .menu-item.logo a,
+.theme-8 .wpc-header-bakery.active .menu-item.logo a {
+  color: #fff; }
+
+.theme-8 .wpc-food-menu2-bg2,
+.theme-8 .wpc-comments h4,
+.theme-8 .wpc-add-com h4,
+.theme-8 .wpc-upcom,
+.theme-8 .wpc-bakery-food-item .wpc-bakery-logo:after,
+.theme-8 .wpc-after-elem,
+.theme-8 .wpc-dishes .tabs-header li.active a,
+.theme-8 .wpc-about-form button,
+.theme-8 .wpc-add-com input,
+.theme-8 .wpc-testi-h3,
+.theme-8 .wpc-after-elem:after,
+.theme-8 .wpc-add-com textarea,
+.theme-8 .wpc-reservation .wpc-persons label.active,
+.theme-8 .wpc-sushi-prop-item .wpc-hide a,
+.theme-8 .wpc-blog-post-aside form input,
+.theme-8 .wpc-dishes .tabs-header li:hover,
+.theme-8 .wpc-header-menu .menu-item.logo:after,
+.theme-8 .wpc-header-bakery .menu-item.logo,
+.theme-8 .wpc-dishes .tabs-header li.active {
+  border-color: #234f6e; }
+
+.theme-8 .wpc-service-logo,
+.theme-8 .wpc-tabs-more,
+.theme-8 .wpc-header-menu .menu-item.logo a:before,
+.theme-8 .wpc-header-menu .menu-item.logo a:hover:before,
+.theme-8 .wpc-header-menu .menu-item.logo a:hover:after,
+.theme-8 .wpc-header-menu .menu-item.logo a:after,
+.theme-8 .wpc-hide-item,
+.theme-8 .wpc-bs-menu .slide-next,
+.theme-8 .wpc-about-title a,
+.theme-8 .wpc-bs-menu .tabs-header .wpc-bs-elems-text a,
+.theme-8 .wpc-comments-text a,
+.theme-8 .wpc-team .pagination .swiper-active-switch,
+.theme-8 .wpc-about-form button:hover,
+.theme-8 .wpc-upcoming-reg,
+.theme-8 .wpc-header-sushi .main-menu li a.active:before,
+.theme-8 .wpc-info-block4 a,
+.theme-8 .wpc-upcoming-date,
+.theme-8 .wpc-sushi-our-service .wpc-service-logo,
+.theme-8 .wpc-sushi-text a,
+.theme-8 .wpc-sushi-footer-item button:focus,
+.theme-8 .wpc-sushi-footer-item button,
+.theme-8 .wpc-add-com button,
+.theme-8 .wpc-contact-form button,
+.theme-8 .wpc-header-menu .menu-item a:hover:before,
+.theme-8 .wpc-header-menu .menu-item a:hover:after,
+.theme-8 .wpc-food-menu2-about a,
+.theme-8 .wpc-food-menu2-bg2 .wpc-food-menu2-chef a,
+.theme-8 .pagination .swiper-active-switch,
+.theme-8 .wpc-header-menu .menu-item a.active:before,
+.theme-8 .wpc-header-menu .menu-item a.active:after,
+.theme-8 .wpc-select-form-item .wpc-find-but,
+.theme-8 .wpc-testi .swiper-container .swiper-active-switch,
+.theme-8 .wpc-bakery-info a,
+.theme-8 .wpc-bakery-3block-slider .swiper-slide h4:after,
+.theme-8 .wpc-bakery-text a,
+.theme-8 .wpc-info-block6:after,
+.theme-8 .wpc-bakery-footer-item button,
+.theme-8 .wpc-bakery-food-item .wpc-bakery-logo,
+.theme-8 .wpc-footer-form button,
+.theme-8 .wpc-pizzeria-home a,
+.theme-8 .wpc-pizzeria-recipes-text a,
+.theme-8 .wpc-spizzeria-text a,
+.theme-8 .wpc-bistro-text a,
+.theme-8 .wpc-proposes-t-bg:hover:after,
+.theme-8 .wpc-header-bakery .menu-item.logo {
+  background-color: #234f6e; }
+
+.theme-8 .wpc-select-form-item .bootstrap-select > .dropdown-toggle:focus,
+.theme-8 .wpc-select-form-item .bootstrap-select > .dropdown-toggle,
+.theme-8 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-8 .wpc-select-form-item1 input {
+  border-bottom: 1px solid #234f6e; }
+
+.theme-8 .wpc-service-logo:after,
+.theme-8 .wpc-our-menu .tabs-header li:hover,
+.theme-8 .wpc-our-menu .tabs-header li.active,
+.theme-8 .wpc-blog-h3-item {
+  border: 2px solid #234f6e; }
+
+.theme-8 .pagination .swiper-active-switch:after {
+  border: 1px solid #234f6e; }
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.theme-9 .wpt-dish-itemH .wpc-dishes-price span,
+.theme-9 h2,
+.theme-9 .logo2 a,
+.theme-9 .wpc-sushi-text2 h2,
+.theme-9 .wpc-testi-body h5,
+.theme-9 .wpc-hour span i,
+.theme-9 .wpc-our-menu .tabs-header li:hover a,
+.theme-9 .wpc-our-menu .tabs-header li.active a,
+.theme-9 .wpc-our-menu .tabs-header li:hover a,
+.theme-9 .wpc-our-menu-body span,
+.theme-9 .wpc-blog-h3-item-body .wpc-blog-h3-by h4,
+.theme-9 .wpc-blog-h3-item-body .wpc-blog-h3-info span:before,
+.theme-9 .wpc-blog-h3-item-body h3,
+.theme-9 .wpc-our-wrap .wpc-service-item span,
+.theme-9 .wpc-our-wrap .wpc-service-item .wpc-our-wrap-mail,
+.theme-9 .wpc-select-form-item .bootstrap-select.btn-group .dropdown-toggle .caret,
+.theme-9 .wpc-select-form-item1 .caret,
+.theme-9 .wpc-service-item span i,
+.theme-9 .wpc-hour span i,
+.theme-9 .wpc-testi-body h5,
+.theme-9 .wpc-blog-post .wpc-blog-post-info span:before,
+.theme-9 .wpc-b-posts-info span:before,
+.theme-9 .wpc-mains span,
+.theme-9 .wpc-blog-post-aside form button:before,
+.theme-9 .wpc-dishes .tabs-header li:hover a,
+.theme-9 .wpc-comments h4,
+.theme-9 .wpt-dish-ib-price span .wpc-add-com h4,
+.theme-9 .wpc-comments-text span:before,
+.theme-9 .wpc-dishes-price span,
+.theme-9 .wpc-dishes .tabs-header li.active a,
+.theme-9 .wpc-proposes-text span i,
+.theme-9 .wpc-footer h2,
+.theme-9 .wpc-work-time i,
+.theme-9 .wpt-dish-bg h2,
+.theme-9 .wpt-dish-tabs h4,
+.theme-9 .wpc-twitter a,
+.theme-9 .wpt-dish-ib-price span,
+.theme-9 .wpc-dishes .tabs-header li.active a,
+.theme-9 .wpc-copyright a,
+.theme-9 .wpc-header-menu .menu-item.logo a,
+.theme-9 .wpc-our-service h2,
+.theme-9 .wpc-about-bs h2,
+.theme-9 .wpc-swiper h1,
+.theme-9 .wpc-bs-prop h2,
+.theme-9 .wpc-bs-menu h2,
+.theme-9 .wpc-bs-info-block h2,
+.theme-9 .main-menu li a:hover,
+.theme-9 .main-menu li a.active,
+.theme-9 .wpc-sushi-prop-item .wpc-hide a:hover,
+.theme-9 .wpc-sushi-our-service .wpc-service-item span i,
+.theme-9 .wpc-about-form button,
+.theme-9 .wpc-header-menu-light.active .menu-item a:hover,
+.theme-9 .wpc-add-com h4,
+.theme-9 .wpc-header-menu-light.active .menu-item.logo a,
+.theme-9 .wpc-header-menu-light.active .menu-item a.active,
+.theme-9 .wpc-about-form h3,
+.theme-9 .wpc-header-menu .menu-item a:hover,
+.theme-9 .wpc-bs-elems-text i,
+.theme-9 .wpc-reservation h2,
+.theme-9 .wpc-bakery-info h2,
+.theme-9 .wpc-food-home h2,
+.theme-9 .wpc-services-food h2,
+.theme-9 .wpc-food-hide h5,
+.theme-9 .wpc-food-hide i,
+.theme-9 .wpc-fast-food-footer h2,
+.theme-9 .wpc-fast-food-footer h5,
+.theme-9 .wpc-fast-food-text h2,
+.theme-9 .wpc-header-menu-light.active .menu-item.logo a:hover,
+.theme-9 .wpc-bistro-footer h4,
+.theme-9 .wpc-header-menu-light.active .main-menu .sub-menu a:hover,
+.theme-9 .wpc-reservation .wpc-persons label.active span,
+.theme-9 .wpc-sushi-footer-item .soc-net li a:before,
+.theme-9 .wpc-header-sushi .main-menu li a:hover,
+.theme-9 .wpc-header-menu .menu-item a.active,
+.theme-9 .wpc-header-menu .menu-item a:hover,
+.theme-9 .wpc-bakery-food-item span i,
+.theme-9 .wpc-food-copyright a,
+.theme-9 .wpc-bakery-footer-item h5,
+.theme-9 .wpc-bakery-footer-item h6,
+.theme-9 .wpc-bakery-3block-slider .swiper-slide h4,
+.theme-9 .wpc-select-form .icon-left:before,
+.theme-9 .wpc-pizzeria-home h3,
+.theme-9 .wpc-footer h5,
+.theme-9 .wpc-bistro-info-block h2,
+.theme-9 .wpc-bistro-text h2,
+.theme-9 .wpc-sushi-dish h2,
+.theme-9 .wpc-pizzeria-prop h2,
+.theme-9 .wpc-pizzeria-prop i,
+.theme-9 .wpc-spizzeria-text h2,
+.theme-9 .wpc-pizzeria-recipes-text h2,
+.theme-9 .wpc-about-pizzeria h2,
+.theme-9 .wpc-info-block2_text h2,
+.theme-9 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-9 .wpc-bakery-copyright .logo a,
+.theme-9 .wpc-bistro-propose h2,
+.theme-9 .wpc-bistro-info-block2 h2,
+.theme-9 .wpc-bistro-discount h2 {
+  color: #4f1d76; }
+
+.theme-9 .wpc-pizzeria-home h1,
+.theme-9 .wpc-header-bakery .menu-item.logo a,
+.theme-9 .wpc-header-bakery.active .menu-item.logo a {
+  color: #fff; }
+
+.theme-9 .wpc-food-menu2-bg2,
+.theme-9 .wpc-comments h4,
+.theme-9 .wpc-add-com h4,
+.theme-9 .wpc-upcom,
+.theme-9 .wpc-bakery-food-item .wpc-bakery-logo:after,
+.theme-9 .wpc-after-elem,
+.theme-9 .wpc-dishes .tabs-header li.active a,
+.theme-9 .wpc-about-form button,
+.theme-9 .wpc-add-com input,
+.theme-9 .wpc-testi-h3,
+.theme-9 .wpc-after-elem:after,
+.theme-9 .wpc-add-com textarea,
+.theme-9 .wpc-reservation .wpc-persons label.active,
+.theme-9 .wpc-sushi-prop-item .wpc-hide a,
+.theme-9 .wpc-blog-post-aside form input,
+.theme-9 .wpc-dishes .tabs-header li:hover,
+.theme-9 .wpc-header-menu .menu-item.logo:after,
+.theme-9 .wpc-header-bakery .menu-item.logo,
+.theme-9 .wpc-dishes .tabs-header li.active {
+  border-color: #4f1d76; }
+
+.theme-9 .wpc-service-logo,
+.theme-9 .wpc-tabs-more,
+.theme-9 .wpc-header-menu .menu-item.logo a:before,
+.theme-9 .wpc-header-menu .menu-item.logo a:hover:before,
+.theme-9 .wpc-header-menu .menu-item.logo a:hover:after,
+.theme-9 .wpc-header-menu .menu-item.logo a:after,
+.theme-9 .wpc-hide-item,
+.theme-9 .wpc-bs-menu .slide-next,
+.theme-9 .wpc-about-title a,
+.theme-9 .wpc-bs-menu .tabs-header .wpc-bs-elems-text a,
+.theme-9 .wpc-comments-text a,
+.theme-9 .wpc-team .pagination .swiper-active-switch,
+.theme-9 .wpc-about-form button:hover,
+.theme-9 .wpc-upcoming-reg,
+.theme-9 .wpc-header-sushi .main-menu li a.active:before,
+.theme-9 .wpc-info-block4 a,
+.theme-9 .wpc-upcoming-date,
+.theme-9 .wpc-sushi-our-service .wpc-service-logo,
+.theme-9 .wpc-sushi-text a,
+.theme-9 .wpc-sushi-footer-item button:focus,
+.theme-9 .wpc-sushi-footer-item button,
+.theme-9 .wpc-add-com button,
+.theme-9 .wpc-contact-form button,
+.theme-9 .wpc-header-menu .menu-item a:hover:before,
+.theme-9 .wpc-header-menu .menu-item a:hover:after,
+.theme-9 .wpc-food-menu2-about a,
+.theme-9 .wpc-food-menu2-bg2 .wpc-food-menu2-chef a,
+.theme-9 .pagination .swiper-active-switch,
+.theme-9 .wpc-header-menu .menu-item a.active:before,
+.theme-9 .wpc-header-menu .menu-item a.active:after,
+.theme-9 .wpc-select-form-item .wpc-find-but,
+.theme-9 .wpc-testi .swiper-container .swiper-active-switch,
+.theme-9 .wpc-bakery-info a,
+.theme-9 .wpc-bakery-3block-slider .swiper-slide h4:after,
+.theme-9 .wpc-bakery-text a,
+.theme-9 .wpc-info-block6:after,
+.theme-9 .wpc-bakery-footer-item button,
+.theme-9 .wpc-bakery-food-item .wpc-bakery-logo,
+.theme-9 .wpc-footer-form button,
+.theme-9 .wpc-pizzeria-home a,
+.theme-9 .wpc-pizzeria-recipes-text a,
+.theme-9 .wpc-spizzeria-text a,
+.theme-9 .wpc-bistro-text a,
+.theme-9 .wpc-proposes-t-bg:hover:after,
+.theme-9 .wpc-header-bakery .menu-item.logo {
+  background-color: #4f1d76; }
+
+.theme-9 .wpc-select-form-item .bootstrap-select > .dropdown-toggle:focus,
+.theme-9 .wpc-select-form-item .bootstrap-select > .dropdown-toggle,
+.theme-9 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-9 .wpc-select-form-item1 input {
+  border-bottom: 1px solid #4f1d76; }
+
+.theme-9 .wpc-service-logo:after,
+.theme-9 .wpc-our-menu .tabs-header li:hover,
+.theme-9 .wpc-our-menu .tabs-header li.active,
+.theme-9 .wpc-blog-h3-item {
+  border: 2px solid #4f1d76; }
+
+.theme-9 .pagination .swiper-active-switch:after {
+  border: 1px solid #4f1d76; }
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.theme-10 h2,
+.theme-10 .logo2 a,
+.theme-10 .wpc-sushi-text2 h2,
+.theme-10 .wpc-testi-body h5,
+.theme-10 .wpc-hour span i,
+.theme-10 .wpc-our-menu .tabs-header li:hover a,
+.theme-10 .wpc-our-menu .tabs-header li.active a,
+.theme-10 .wpc-our-menu .tabs-header li:hover a,
+.theme-10 .wpc-our-menu-body span,
+.theme-10 .wpc-blog-h3-item-body .wpc-blog-h3-by h4,
+.theme-10 .wpc-blog-h3-item-body .wpc-blog-h3-info span:before,
+.theme-10 .wpc-blog-h3-item-body h3,
+.theme-10 .wpc-our-wrap .wpc-service-item span,
+.theme-10 .wpc-our-wrap .wpc-service-item .wpc-our-wrap-mail,
+.theme-10 .wpc-select-form-item .bootstrap-select.btn-group .dropdown-toggle .caret,
+.theme-10 .wpc-select-form-item1 .caret,
+.theme-10 .wpc-service-item span i,
+.theme-10 .wpc-hour span i,
+.theme-10 .wpc-testi-body h5,
+.theme-10 .wpc-blog-post .wpc-blog-post-info span:before,
+.theme-10 .wpc-b-posts-info span:before,
+.theme-10 .wpc-mains span,
+.theme-10 .wpc-blog-post-aside form button:before,
+.theme-10 .wpc-dishes .tabs-header li:hover a,
+.theme-10 .wpc-comments h4,
+.theme-10 .wpt-dish-ib-price span .wpc-add-com h4,
+.theme-10 .wpc-comments-text span:before,
+.theme-10 .wpc-dishes-price span,
+.theme-10 .wpc-dishes .tabs-header li.active a,
+.theme-10 .wpc-proposes-text span i,
+.theme-10 .wpc-footer h2,
+.theme-10 .wpc-work-time i,
+.theme-10 .wpt-dish-bg h2,
+.theme-10 .wpt-dish-tabs h4,
+.theme-10 .wpc-twitter a,
+.theme-10 .wpt-dish-ib-price span,
+.theme-10 .wpc-dishes .tabs-header li.active a,
+.theme-10 .wpc-copyright a,
+.theme-10 .wpc-header-menu .menu-item.logo a,
+.theme-10 .wpc-our-service h2,
+.theme-10 .wpc-about-bs h2,
+.theme-10 .wpc-swiper h1,
+.theme-10 .wpc-bs-prop h2,
+.theme-10 .wpc-bs-menu h2,
+.theme-10 .wpc-bs-info-block h2,
+.theme-10 .main-menu li a:hover,
+.theme-10 .main-menu li a.active,
+.theme-10 .wpc-sushi-prop-item .wpc-hide a:hover,
+.theme-10 .wpc-sushi-our-service .wpc-service-item span i,
+.theme-10 .wpc-about-form button,
+.theme-10 .wpc-header-menu-light.active .menu-item a:hover,
+.theme-10 .wpc-add-com h4,
+.theme-10 .wpc-header-menu-light.active .menu-item.logo a,
+.theme-10 .wpc-header-menu-light.active .menu-item a.active,
+.theme-10 .wpc-about-form h3,
+.theme-10 .wpc-header-menu .menu-item a:hover,
+.theme-10 .wpc-bs-elems-text i,
+.theme-10 .wpc-reservation h2,
+.theme-10 .wpc-bakery-info h2,
+.theme-10 .wpc-food-home h2,
+.theme-10 .wpc-services-food h2,
+.theme-10 .wpc-food-hide h5,
+.theme-10 .wpc-food-hide i,
+.theme-10 .wpc-fast-food-footer h2,
+.theme-10 .wpc-fast-food-footer h5,
+.theme-10 .wpc-fast-food-text h2,
+.theme-10 .wpc-header-menu-light.active .menu-item.logo a:hover,
+.theme-10 .wpc-bistro-footer h4,
+.theme-10 .wpc-header-menu-light.active .main-menu .sub-menu a:hover,
+.theme-10 .wpc-reservation .wpc-persons label.active span,
+.theme-10 .wpc-sushi-footer-item .soc-net li a:before,
+.theme-10 .wpc-header-sushi .main-menu li a:hover,
+.theme-10 .wpc-header-menu .menu-item a.active,
+.theme-10 .wpc-header-menu .menu-item a:hover,
+.theme-10 .wpc-bakery-food-item span i,
+.theme-10 .wpc-food-copyright a,
+.theme-10 .wpc-bakery-footer-item h5,
+.theme-10 .wpc-bakery-footer-item h6,
+.theme-10 .wpc-bakery-3block-slider .swiper-slide h4,
+.theme-10 .wpc-select-form .icon-left:before,
+.theme-10 .wpc-pizzeria-home h3,
+.theme-10 .wpc-footer h5,
+.theme-10 .wpt-dish-itemH .wpc-dishes-price span,
+.theme-10 .wpc-bistro-info-block h2,
+.theme-10 .wpc-bistro-text h2,
+.theme-10 .wpc-sushi-dish h2,
+.theme-10 .wpc-pizzeria-prop h2,
+.theme-10 .wpc-pizzeria-prop i,
+.theme-10 .wpc-spizzeria-text h2,
+.theme-10 .wpc-pizzeria-recipes-text h2,
+.theme-10 .wpc-about-pizzeria h2,
+.theme-10 .wpc-info-block2_text h2,
+.theme-10 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-10 .wpc-bakery-copyright .logo a,
+.theme-10 .wpc-bistro-propose h2,
+.theme-10 .wpc-bistro-info-block2 h2,
+.theme-10 .wpc-bistro-discount h2 {
+  color: #30731b; }
+
+.theme-10 .wpc-pizzeria-home h1,
+.theme-10 .wpc-header-bakery .menu-item.logo a,
+.theme-10 .wpc-header-bakery.active .menu-item.logo a {
+  color: #fff; }
+
+.theme-10 .wpc-food-menu2-bg2,
+.theme-10 .wpc-comments h4,
+.theme-10 .wpc-add-com h4,
+.theme-10 .wpc-upcom,
+.theme-10 .wpc-bakery-food-item .wpc-bakery-logo:after,
+.theme-10 .wpc-after-elem,
+.theme-10 .wpc-dishes .tabs-header li.active a,
+.theme-10 .wpc-about-form button,
+.theme-10 .wpc-add-com input,
+.theme-10 .wpc-testi-h3,
+.theme-10 .wpc-after-elem:after,
+.theme-10 .wpc-add-com textarea,
+.theme-10 .wpc-reservation .wpc-persons label.active,
+.theme-10 .wpc-sushi-prop-item .wpc-hide a,
+.theme-10 .wpc-blog-post-aside form input,
+.theme-10 .wpc-dishes .tabs-header li:hover,
+.theme-10 .wpc-header-menu .menu-item.logo:after,
+.theme-10 .wpc-header-bakery .menu-item.logo,
+.theme-10 .wpc-dishes .tabs-header li.active {
+  border-color: #30731b; }
+
+.theme-10 .wpc-service-logo,
+.theme-10 .wpc-tabs-more,
+.theme-10 .wpc-header-menu .menu-item.logo a:before,
+.theme-10 .wpc-header-menu .menu-item.logo a:hover:before,
+.theme-10 .wpc-header-menu .menu-item.logo a:hover:after,
+.theme-10 .wpc-header-menu .menu-item.logo a:after,
+.theme-10 .wpc-hide-item,
+.theme-10 .wpc-bs-menu .slide-next,
+.theme-10 .wpc-about-title a,
+.theme-10 .wpc-bs-menu .tabs-header .wpc-bs-elems-text a,
+.theme-10 .wpc-comments-text a,
+.theme-10 .wpc-team .pagination .swiper-active-switch,
+.theme-10 .wpc-about-form button:hover,
+.theme-10 .wpc-upcoming-reg,
+.theme-10 .wpc-header-sushi .main-menu li a.active:before,
+.theme-10 .wpc-info-block4 a,
+.theme-10 .wpc-upcoming-date,
+.theme-10 .wpc-sushi-our-service .wpc-service-logo,
+.theme-10 .wpc-sushi-text a,
+.theme-10 .wpc-sushi-footer-item button:focus,
+.theme-10 .wpc-sushi-footer-item button,
+.theme-10 .wpc-add-com button,
+.theme-10 .wpc-contact-form button,
+.theme-10 .wpc-header-menu .menu-item a:hover:before,
+.theme-10 .wpc-header-menu .menu-item a:hover:after,
+.theme-10 .wpc-food-menu2-about a,
+.theme-10 .wpc-food-menu2-bg2 .wpc-food-menu2-chef a,
+.theme-10 .pagination .swiper-active-switch,
+.theme-10 .wpc-header-menu .menu-item a.active:before,
+.theme-10 .wpc-header-menu .menu-item a.active:after,
+.theme-10 .wpc-select-form-item .wpc-find-but,
+.theme-10 .wpc-testi .swiper-container .swiper-active-switch,
+.theme-10 .wpc-bakery-info a,
+.theme-10 .wpc-bakery-3block-slider .swiper-slide h4:after,
+.theme-10 .wpc-bakery-text a,
+.theme-10 .wpc-info-block6:after,
+.theme-10 .wpc-bakery-footer-item button,
+.theme-10 .wpc-bakery-food-item .wpc-bakery-logo,
+.theme-10 .wpc-footer-form button,
+.theme-10 .wpc-pizzeria-home a,
+.theme-10 .wpc-pizzeria-recipes-text a,
+.theme-10 .wpc-spizzeria-text a,
+.theme-10 .wpc-bistro-text a,
+.theme-10 .wpc-proposes-t-bg:hover:after,
+.theme-10 .wpc-header-bakery .menu-item.logo {
+  background-color: #30731b; }
+
+.theme-10 .wpc-select-form-item .bootstrap-select > .dropdown-toggle:focus,
+.theme-10 .wpc-select-form-item .bootstrap-select > .dropdown-toggle,
+.theme-10 .wpc-pizzeria-home .pagination .swiper-active-switch,
+.theme-10 .wpc-select-form-item1 input {
+  border-bottom: 1px solid #30731b; }
+
+.theme-10 .wpc-service-logo:after,
+.theme-10 .wpc-our-menu .tabs-header li:hover,
+.theme-10 .wpc-our-menu .tabs-header li.active,
+.theme-10 .wpc-blog-h3-item {
+  border: 2px solid #30731b; }
+
+.theme-10 .pagination .swiper-active-switch:after {
+  border: 1px solid #30731b; }

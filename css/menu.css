@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* Custom styles */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Vollkorn');
+body {
+    background-color: #eadc8f !important;
+    color: #001f3f !important;
+}
+
+.categoryName  {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Open Sans';
+}
+
+.subcategoryName {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Open Sans';
+}
+
+.subcategoryDescription {
+    font-size: 14px;
+    font-style: italic;
+    font-family: 'Open Sans';
+}
+
+.subcategoryNameOption {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+.item {}
+
+.intro-message {
+    color: blank;
+}
+
+.item .itemName {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Open Sans';
+}
+
+.item .itemName .itemDescription {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Open Sans';
+}
+
+.item .itemName .optionDescription {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Open Sans';
+}
+
+.item .itemName .itemOptions {
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+
+.itemPrice {
+    font-weight: bold;
+    text-align: right;
+    font-family: 'Open Sans';
+}
+
+.optionPrice {
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+img.chilli {
+  height: 18px;
+  width: 18px;
+}

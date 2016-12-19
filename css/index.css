@@ -453,7 +453,7 @@ html.active {
       transform: translateX(100%);
       opacity: 0;
       padding: 5px;
-      font-family: 'Droid Serif', serif;
+      font-family: 'Baloo Thambi', serif;
       color: #333;
       margin-right: -22px;
       font-size: 12px;
@@ -510,7 +510,7 @@ html.active {
   .wpc-footer a:hover span {
     text-decoration: underline; }
   .wpc-footer i {
-    font-family: 'Droid Serif', serif;
+    font-family: 'Baloo Thambi', serif;
     color: #ccc;
     font-weight: 700;
     text-align: right;
@@ -681,13 +681,13 @@ h3 {
 
 span {
   color: #666;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Baloo Thambi', serif;
   font-size: 16px;
   font-weight: 400; }
 
 p {
   color: #888;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Baloo Thambi', serif;
   font-size: 14px;
   font-weight: 400; }
 
@@ -847,7 +847,7 @@ p {
   .wpc-about-form input, .wpc-about-form textarea {
     border-radius: 0;
     color: #888;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Baloo Thambi', serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 1;
@@ -872,7 +872,7 @@ p {
   .wpc-about-form button {
     border: 2px solid #c7a75b;
     color: #c7a75b;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Baloo Thambi', serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 30px;
@@ -1807,7 +1807,7 @@ p {
     border-radius: 0;
     line-height: 30px;
     color: #333;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Baloo Thambi', serif;
     font-size: 16px;
     font-weight: 400; }
     .wpc-select-form-item1 input:focus, .wpc-select-form-item1 input:hover {
@@ -1857,7 +1857,7 @@ p {
   .wpc-select-form-item .bootstrap-select.btn-group .dropdown-toggle .filter-option {
     line-height: 30px;
     color: #333;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Baloo Thambi', serif;
     font-size: 16px;
     font-weight: 400; }
   .wpc-select-form-item .bootstrap-select.btn-group .dropdown-toggle .caret {
@@ -1873,7 +1873,7 @@ p {
   display: inline-block;
   width: 320px;
   color: #fffefe;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Baloo Thambi', serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 52px;
@@ -1950,7 +1950,7 @@ p {
     letter-spacing: 0px; }
   .wpc-our-wrap .wpc-service-item .wpc-our-wrap-mail {
     color: #c7a75b;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Baloo Thambi', serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 22px; }
@@ -2074,7 +2074,7 @@ p {
   background: #c7a75b;
   text-align: center;
   color: white;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Baloo Thambi', serif;
   font-size: 15px;
   font-weight: 400;
   text-transform: uppercase; }
@@ -2129,7 +2129,7 @@ p {
 
 .wpc-upcoming-reg {
   color: #fffefe;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Baloo Thambi', serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 55px;
@@ -2582,7 +2582,7 @@ p {
 
 .wpc-facts-text {
   color: #333;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Baloo Thambi', serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -2794,7 +2794,7 @@ p {
 
 .wpc-contact-form input, .wpc-contact-form textarea {
   color: #888;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Baloo Thambi', serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2822,7 +2822,7 @@ p {
 
 .wpc-contact-form button {
   color: white;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Baloo Thambi', serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 53px;
@@ -2885,7 +2885,7 @@ p {
     height: 100%; }
   .wpc-info-block5 h2, .wpc-info-block5 h3 {
     color: white;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Baloo Thambi', serif;
     font-weight: 700;
     line-height: 65px;
     text-transform: uppercase;
@@ -3137,7 +3137,7 @@ p {
     margin-top: 35px;
     display: inline-block;
     color: #fff;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Baloo Thambi', serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 45px;
@@ -3183,7 +3183,7 @@ p {
       margin-bottom: 45px;
       display: inline-block;
       color: #fff;
-      font-family: 'Droid Serif', serif;
+      font-family: 'Baloo Thambi', serif;
       font-size: 12px;
       font-weight: 700;
       line-height: 45px;
@@ -3348,7 +3348,7 @@ p {
 
 .wpc-add-com input, .wpc-add-com textarea {
   color: #888;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Baloo Thambi', serif;
   font-size: 15px;
   font-style: italic;
   line-height: 31px;
@@ -3414,7 +3414,7 @@ p {
     display: inline-block;
     margin-top: 48px;
     color: #888;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Baloo Thambi', serif;
     font-size: 15px;
     font-style: italic;
     line-height: 31px;
@@ -3446,7 +3446,7 @@ p {
     font-size: 16px;
     font-weight: 700;
     line-height: 53px;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Baloo Thambi', serif;
     text-transform: uppercase;
     padding: 0 55px;
     background-color: #b79a53;
@@ -3508,7 +3508,7 @@ p {
 .wpc-b-posts-info a,
 .wpc-b-posts-item a {
   color: #333;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Baloo Thambi', serif;
   font-size: 13px;
   font-weight: 700;
   line-height: 16px;
@@ -3539,7 +3539,7 @@ p {
       position: absolute;
       right: 0;
       color: #888;
-      font-family: 'Droid Serif', serif;
+      font-family: 'Baloo Thambi', serif;
       font-size: 12px;
       font-weight: 700;
       text-transform: uppercase; }
@@ -3552,7 +3552,7 @@ p {
   text-transform: uppercase; }
   .wpc-blog-categ-item span i {
     color: #888;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Baloo Thambi', serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 50px;

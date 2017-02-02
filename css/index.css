@@ -474,7 +474,7 @@ html.active {
 /* FOOTER */
 /*--------------------------------------------------------------------------------------*/
 .wpc-footer {
-  margin: 0 90px;
+  margin: 0 0px;
   background-color: #000;
   background-size:cover;
  }
@@ -699,7 +699,7 @@ p {
 /*--------------------------------------------------------------------------------------*/
 .wpc-swiper {
   width: 100%;
-  padding: 0 90px;
+  padding: 0 0px;
   margin-left: auto;
   margin-right: auto;
   text-align: center; }
@@ -892,7 +892,7 @@ p {
 /*third block star*/
 .wpc-our-service {
   position: relative;
-  margin: 0 90px;
+  margin: 0 0px;
   box-sizing: border-box;
   text-align: center;
   background: #fff url("../img/home1/service_bg.jpg") 0 0 no-repeat;
@@ -1299,7 +1299,7 @@ p {
 .wpc-info-block {
   text-align: center;
   box-sizing: border-box;
-  margin: 0 90px;
+  margin: 0 0px;
   background-size: cover;
   position: relative;
   }
@@ -1398,7 +1398,7 @@ p {
 /*sixth block end*/
 /*seventh block start*/
 .wpc-our-menu {
-  margin: 0 90px;
+  margin: 0 0px;
   text-align: center;
 //  background: #fff url("../img/home1/menu_bg.jpg") 0 0 no-repeat;
   background-size: cover;
@@ -1634,7 +1634,7 @@ p {
   text-align: center; }
 
 .wpc-info-b3 {
-  margin: 0 90px;
+  margin: 0 0px;
   box-sizing: border-box; }
   .wpc-info-b3 .pagination {
     z-index: 2;
@@ -2168,7 +2168,7 @@ p {
 
 .wpc-map {
   height: 490px;
-  margin: 0 90px;
+  margin: 0 0px;
   box-sizing: border-box; }
 
 /*--------------------------------------------------------------------------------------*/

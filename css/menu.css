@@ -7,8 +7,18 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Vollkorn');
 body {
-    background-color: #eadc8f !important;
-    color: #001f3f !important;
+    color: #001f3f;
+}
+
+.categoryName {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.wpc-header-menu {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #c7a75b;
 }
 
 .categoryName  {
@@ -78,4 +88,8 @@ body {
 img.chilli {
   height: 18px;
   width: 18px;
+}
+
+.footer {
+  width: 100%;
 }

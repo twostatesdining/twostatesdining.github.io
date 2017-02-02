@@ -195,6 +195,9 @@ html.active {
   position: fixed;
   top: 0px;
   width: 100%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c7a75b;
   background: #fff;
   text-align: center;
   z-index: 999; }
@@ -4854,7 +4857,7 @@ p {
   margin-top: 85px; }
 
 .marg-lg-t90 {
-  margin-top: 90px; }
+  margin-top: 0px; }
 
 .marg-lg-t95 {
   margin-top: 95px; }
